@@ -12,6 +12,7 @@ Code accompanying the paper on closed-loop memory-enhanced adaptive plasticity c
 ## Included paper results
 
 - `results/`: figures and summary tables used for the paper
+- `logs/`: key run logs (`metrics.csv` and `config.json`) for the main continual-learning sequence and progressive ablation
 
 ## Environment
 
