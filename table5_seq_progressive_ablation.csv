@@ -1,0 +1,10 @@
+Algorithm,Seeds,Revisit Reward,Retention,Forgetting
+P3O (B),10,110.14 +/- 84.16,0.43 +/- 0.39,231.89 +/- 216.30
+B+Alpha,10,95.98 +/- 75.22,0.36 +/- 0.31,268.20 +/- 285.35
+B+Alpha+Reset,10,87.11 +/- 54.67,0.41 +/- 0.28,221.70 +/- 248.48
+B+A+R+Distill (ClosedLoopFull),20,78.51 +/- 47.74,0.47 +/- 0.32,147.81 +/- 177.38
+B+A+R+D+Memory (ClosedLoopMemory),20,162.80 +/- 175.61,0.76 +/- 0.60,116.47 +/- 186.93
+p (B+Alpha vs P3O),,p=0.6571,,
+p (B+Alpha+Reset vs B+Alpha),,p=0.7808,,
+p (CLFull vs B+Alpha+Reset),,p=0.9521,,
+p (CLMemory vs CLFull),,p=0.0066,,
