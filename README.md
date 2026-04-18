@@ -9,6 +9,10 @@ Code accompanying the paper on closed-loop memory-enhanced adaptive plasticity c
 - `run_closedloop_seq_ablation.py`: progressive sequence ablation
 - `plot_closedloop_paper.py`: figure and table generation
 
+## Included paper results
+
+- `results/`: figures and summary tables used for the paper
+
 ## Environment
 
 - Python 3.11

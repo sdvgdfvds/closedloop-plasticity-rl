@@ -1,0 +1,7 @@
+Module Combination,Hopper,Walker2d
+Dynamic,61.69 +/- 45.40,85.24 +/- 41.81
+Dyn+AdaReset,168.84 +/- 27.18,149.19 +/- 81.05
+Dyn+HardDistill,57.01 +/- 14.80,213.38 +/- 102.79
+EvtSBP+AdaReset+HardDistill,140.21 +/- 44.89,116.25 +/- 33.47
+ClosedLoopAlpha,135.31 +/- 28.46,144.51 +/- 44.70
+ClosedLoopFull,138.59 +/- 38.50,73.07 +/- 93.76

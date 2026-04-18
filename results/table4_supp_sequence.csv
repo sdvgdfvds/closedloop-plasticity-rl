@@ -1,0 +1,6 @@
+Algorithm,Seeds,Revisit Reward,Retention,Forgetting
+PPO,5,211.10 +/- 81.40,3.102 +/- 2.593,23.68 +/- 47.36
+P3O,5,273.27 +/- 60.59,4.438 +/- 4.247,12.45 +/- 24.89
+ClosedLoopFull,20,105.41 +/- 127.18,1.763 +/- 3.845,119.82 +/- 130.84
+ClosedLoopMemory,20,177.57 +/- 122.38,0.758 +/- 0.669,97.34 +/- 101.42
+p-value (Memory vs Full),,p=0.1275,,
