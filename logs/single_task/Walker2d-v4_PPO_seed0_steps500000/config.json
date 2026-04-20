@@ -1,0 +1,29 @@
+{
+  "env": "Walker2d-v4",
+  "algo": "PPO",
+  "seed": 0,
+  "train_steps": 500000,
+  "sbp_mode": "none",
+  "alpha_mode": "fixed",
+  "hp": {
+    "lr": 0.0003,
+    "buffer_size": 8192,
+    "batch_size": 256,
+    "gamma": 0.99,
+    "train_steps": 500000,
+    "epochs_per_update": 10,
+    "clip_range": 0.2,
+    "clip_grad_norm": 0.5,
+    "hidden_size": 256,
+    "hidden_layers": 3,
+    "activation": "<class 'torch.nn.modules.activation.Tanh'>",
+    "reset_rate": 0.01,
+    "reset_frequency": 50000,
+    "alpha_dkl": 0.4,
+    "alpha_start": 0.6,
+    "alpha_end": 0.2,
+    "alpha_lambda": 4.0,
+    "alpha_mode": "fixed",
+    "distill_loss_bound": 0.01
+  }
+}

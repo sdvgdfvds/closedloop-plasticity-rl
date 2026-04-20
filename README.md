@@ -12,7 +12,11 @@ Code accompanying the paper on closed-loop memory-enhanced adaptive plasticity c
 ## Included paper results
 
 - `results/`: figures and summary tables used for the paper
-- `logs/`: key run logs (`metrics.csv` and `config.json`) for the main continual-learning sequence and progressive ablation
+- `logs/main_sequence/`: main continual-learning sequence raw logs (`metrics.csv` and `config.json`)
+- `logs/single_task/`: single-task experiment raw logs for Table 1 / Figure 2
+- `logs/single_task_ablation/`: single-task ablation raw logs for Table 3
+- `logs/supp_sequence/`: supplementary continual-learning sequence raw logs for Table 4 / Figure 7
+- `key_main_sequence_logs.zip`: compressed copy of the key main-sequence logs for convenient download
 
 ## Environment
 
