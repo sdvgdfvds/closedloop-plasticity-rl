@@ -1,0 +1,11 @@
+[start] 2026-03-24T09:59:24.082170
+[task] main_formal_PPO_Walker2d-v4_seed1
+[category] main
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_main_baseline_fill.py --algo PPO --env Walker2d-v4 --seed 1 --steps 500000
+--------------------------------------------------------------------------------
+[skip] exists: C:\Users\33277\Desktop\p3o_runs\Walker2d-v4_PPO_seed1_steps500000
+
+--------------------------------------------------------------------------------
+[end] 2026-03-24T09:59:26.550960
+[returncode] 0
+[duration_sec] 2.47

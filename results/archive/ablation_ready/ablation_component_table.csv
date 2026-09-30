@@ -1,0 +1,3 @@
+env,ppo,ppo_cycle,p3o_static,p3o_dynamic,delta_cycle_vs_ppo,delta_static_vs_cycle,delta_dynamic_vs_static
+Hopper-v4,119.18 +/- 2.44,92.91 +/- 4.87,87.38 +/- 41.36,60.58 +/- 51.17,-26.27,-5.53,-26.79
+Walker2d-v4,31.44 +/- 43.23,95.66 +/- 30.12,128.19 +/- 51.86,185.69 +/- 84.12,+64.22,+32.53,+57.50

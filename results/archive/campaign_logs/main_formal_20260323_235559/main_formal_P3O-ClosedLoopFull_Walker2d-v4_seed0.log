@@ -1,0 +1,10 @@
+[start] 2026-03-24T00:00:40.878263
+[task] main_formal_P3O-ClosedLoopFull_Walker2d-v4_seed0
+[category] main
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_p3o_extra_innovations.py --only-algo P3O-ClosedLoopFull --env Walker2d-v4 --seed 0 --steps 500000 --force
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+[end] 2026-03-24T00:00:41.075744
+[returncode] 3221226091
+[duration_sec] 0.20

@@ -1,0 +1,6 @@
+Figure A1. Ablation components comparison (PPO, PPO+Cycle, P3O-static, P3O-dynamic) with std error bars.
+Figure A2. Dynamic-alpha vs static-alpha reward curves across training steps.
+Figure A3. Dynamic-alpha gain bar (dynamic minus static final Avg10 reward, with std).
+Table A1. Component ablation: final Avg10 reward (mean +/- std) and incremental deltas.
+Table A2. Alpha ablation: static vs dynamic paired comparison and win rate.
+Table A3. Efficiency ablation: steps-to-threshold, mean reward-over-time, and SPS.

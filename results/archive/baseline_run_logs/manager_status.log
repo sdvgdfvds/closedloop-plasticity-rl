@@ -1,0 +1,38 @@
+[2026-04-18 18:38:20] Throttle runner started. MaxConcurrent=14 TotalTasks=18
+[2026-04-18 18:38:20] Started EWC-seed1 PID=11204
+[2026-04-18 18:38:22] Started EWC-seed2 PID=13840
+[2026-04-18 18:38:24] Started EWC-seed3 PID=23804
+[2026-04-18 18:38:26] Started EWC-seed4 PID=43320
+[2026-04-18 18:38:28] Started EWC-seed5 PID=42024
+[2026-04-18 18:38:30] Started EWC-seed6 PID=22740
+[2026-04-18 18:38:32] Started EWC-seed7 PID=16136
+[2026-04-18 18:38:34] Started EWC-seed8 PID=47528
+[2026-04-18 18:38:36] Started EWC-seed9 PID=9452
+[2026-04-18 18:38:38] Started A-GEM-seed1 PID=32308
+[2026-04-18 18:38:40] Started A-GEM-seed2 PID=11928
+[2026-04-18 18:38:42] Started A-GEM-seed3 PID=21632
+[2026-04-18 18:38:44] Started A-GEM-seed4 PID=12444
+[2026-04-18 18:38:46] Started A-GEM-seed5 PID=21272
+[2026-04-18 18:41:50] Finished EWC-seed1
+[2026-04-18 18:41:50] Finished EWC-seed2
+[2026-04-18 18:41:50] Finished EWC-seed3
+[2026-04-18 18:41:50] Started A-GEM-seed6 PID=45560
+[2026-04-18 18:41:52] Started A-GEM-seed7 PID=4376
+[2026-04-18 18:41:54] Started A-GEM-seed8 PID=23812
+[2026-04-18 18:42:11] Finished EWC-seed4
+[2026-04-18 18:42:11] Finished EWC-seed5
+[2026-04-18 18:42:11] Finished EWC-seed6
+[2026-04-18 18:42:11] Finished EWC-seed7
+[2026-04-18 18:42:11] Finished EWC-seed8
+[2026-04-18 18:42:11] Finished EWC-seed9
+[2026-04-18 18:42:11] Started A-GEM-seed9 PID=5380
+[2026-04-18 18:42:28] Finished A-GEM-seed1
+[2026-04-18 18:42:28] Finished A-GEM-seed2
+[2026-04-18 18:42:28] Finished A-GEM-seed3
+[2026-04-18 18:42:28] Finished A-GEM-seed4
+[2026-04-18 18:42:28] Finished A-GEM-seed5
+[2026-04-18 18:44:44] Finished A-GEM-seed6
+[2026-04-18 18:44:44] Finished A-GEM-seed7
+[2026-04-18 18:44:44] Finished A-GEM-seed8
+[2026-04-18 18:44:59] Finished A-GEM-seed9
+[2026-04-18 18:45:14] All baseline tasks finished.

@@ -1,0 +1,934 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WR9V5K73');</script>
+<!-- End Google Tag Manager --><script>
+  window.TdxGtmContext = {"User":{"Id":0,"UID":"00000000-0000-0000-0000-000000000000","UserName":"","FullName":"Public User","AlertEmail":"publicuser@noreply.com","Role":"Experience User","HasTDNext":false,"StandardApplicationNames":null,"TicketApplicationNames":[],"AssetApplicationNames":[],"ClientPortalApplicationNames":[],"Type":"Technician","Analytics":{"Title":null,"Organization":null}},"Partition":{"Id":3012,"Name":"UT Dallas Production"},"BillableEntity":{"Id":2,"Name":"The University of Texas at Dallas","SalesForceIdentifier":"0013600000EM5KAAA1","GWMIID":"c5520078-1750-47cc-8296-13017e23287c"},"Environment":{"ShortName":"PRD"}};
+</script><script src="/TDPortal/Content/Scripts/jquery/2.2.4/jquery.min.js?v=20260416160312"></script><script src="/TDPortal/Content/Scripts/jquery-migrate/1.4.1/jquery-migrate.min.js?v=20260416160312"></script><script src="/TDPortal/Content/Scripts/jquery-ui/1.13.2/jquery-ui-1.13.2.custom.timepicker.min.js?v=20260417001054"></script><link href="/TDPortal/Content/Styles/jquery-ui/1.13.2/jquery-ui.compiled.min.css?v=20260417001056" rel="stylesheet" type="text/css"  /><link href="/TDPortal/Content/bootstrap/3.4.1/dist/css/bootstrap.min.css?v=20260416160312" rel="stylesheet" type="text/css" id="lnkBootstrapCSS" /><script src="/TDPortal/Content/bootstrap/3.4.1/dist/js/bootstrap.min.js?v=20260416160312"></script><link href="/TDPortal/Content/FontAwesome/css/fontawesome.min.css?v=20260416160310" rel="stylesheet" type="text/css" id="lnkFontAwesome" /><link href="/TDPortal/Content/FontAwesome/css/solid.css?v=20260416160310" rel="stylesheet" type="text/css"  /><link href="/TDPortal/Content/FontAwesome/css/regular.css?v=20260416160310" rel="stylesheet" type="text/css"  /><link href="/TDPortal/Content/FontAwesome/css/brands.css?v=20260416160310" rel="stylesheet" type="text/css"  /><link href="/TDPortal/Content/FontAwesome/css/v4-shims.css?v=20260416160310" rel="stylesheet" type="text/css"  /><link href="/TDClient/Styles/bootstrap_custom.min.css?v=20260417001056" rel="stylesheet" type="text/css"  /><link href="/TDClient/Styles/TDStyles.min.css?v=20260417001056" rel="stylesheet" type="text/css"  /><link href="https://atlas.utdallas.edu/TDPortal/BE/Style/2/TDClient/30?v=20260115155609" rel="stylesheet" type="text/css" /><script src="/TDPortal/Content/Scripts/tdx/dist/TDJSFramework.compiled.min.js?v=20260417001054"></script><script src="/TDPortal/Content/Scripts/tdx/dist/modalFocusTrap.min.js?v=20260417001052"></script><script src="/TDPortal/Content/Scripts/underscore/1.12.1/underscore-min.js?v=20260416160312"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Atlas Portal",
+  "url": "https://atlas.utdallas.edu/TDClient/30/Portal",
+  "description": "The Client Portal is an application that allows clients to access self-service offerings and track requests.",
+  "sourceOrganization": {
+    "@type": "Organization",
+    "name": "The University of Texas at Dallas",
+    "url": "https://www.utdallas.edu/",
+    "logo": "0.png"
+  }
+}
+</script><script src="/TDClient/Scripts/clientOS.min.js?v=20260417001046"></script>
+<script src="/TDClient/Scripts/collapseMe.min.js?v=20260417001046"></script>
+<script src="/TDClient/Scripts/tdsearchfilter.min.js?v=20260417001046"></script>
+<script src="/TDClient/Scripts/SiteSearch.min.js?v=20260417001046"></script>
+<script src="/TDPortal/Content/Scripts/tdx/dist/elasticsearchAutocomplete.min.js?v=20260417001052"></script>
+<link id="ctl00_ctl00_lnkFavicon" rel="icon" href="https://atlas.utdallas.edu/TDPortal/BE/Icon/2/30?v=20211110062416" />
+
+    
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-40160313-2"></script>
+    <script>
+
+      $(function () {
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        // Be sure to set the proper cookie domain to the customer's full subdomain when sending the pageview hit.
+        gtag('config', 'UA-40160313-2', { 'cookie_domain': 'atlas.utdallas.edu' });
+
+        });
+
+    </script>
+
+  
+
+  <script>
+
+      $(function () {
+        var masterUi = MasterUI({
+          isPostback: false,
+          baseUrl: '/TDClient/',
+          isTdGoogleAnalyticsEnabled: true,
+          isAuthenticated: false
+          });
+
+        $('#collapseMe').collapseMe({
+          toggleVisibilitySelector: '.navbar-toggle'
+        });
+
+        TeamDynamix.addRequiredFieldHelp();
+      });
+
+      // The sub-nav menu uses padding-top to position itself below the header bar and main navigation sections. When the
+      // window is resized, there is a chance that the content of these header or nav sections wraps, causing the height
+      // to change, potentially covering the sub-nav menu, which is obviously a big usability problem. This function
+      // listens for when the window size or orientation is changing (and also when the window first loads), and adjusts
+      // the padding so that the sub-nav menu appears in the correct location.
+      $(window).bind('load ready resize orientationchange', function () {
+        var headerHeight = $('#divMstrHeader').height();
+        $('#navShim').css({
+          "padding-top": headerHeight
+        });
+
+        $('#content').css({
+          "padding-top": headerHeight,
+          "margin-top": headerHeight * -1
+        });
+      });
+  </script>
+
+  
+  
+  
+  <script src="/TDPortal/Content/select2/v3/select2.min.js?v=20260417002322"></script><link href="/TDPortal/Content/select2/v3/select2.compiled.min.css?v=20260417002322" rel="stylesheet" type="text/css" id="lnkSelect2" />
+  <script src="/TDClient/Scripts/attachmentHandler.min.js?v=20260417001054"></script>
+
+  <style type="text/css">
+    .honey-pot-div {
+      display: none;
+    }
+  </style>
+
+  <script>
+    
+
+    function shareArticle() {
+      if ($('#ctl00_ctl00_cpContent_cpContent_shareRecipients').val().trim() === "") {
+        alert('You must first enter a valid email.');
+        $('#btnShare').progressButton('reset');
+      }
+      else {
+        __doPostBack('ctl00$ctl00$cpContent$cpContent$btnSendShare', '');
+      }
+    }
+
+    function closeShareModal() {
+      $('#divShareModal').modal('hide');
+      $('#btnShare').progressButton('reset');
+    }
+
+    function toggleFeedback(isHelpful) {
+      $('#divHelpfulComments').show();
+      $('#divHelpfulYesNo').hide();
+      $('#ctl00_ctl00_cpContent_cpContent_hdnIsHelpful').val(isHelpful);
+      $('#ctl00_ctl00_cpContent_cpContent_txtComments').focus();
+    }
+
+    function toggleFeedbackResult() {
+      $('#divWasHelpful, #divFeedbackRecorded, #divHelpfulComments, #divHelpfulYesNo').toggle();
+    }
+
+    // The following two functions were added as a result of ticket ID: 1392522. We are generating these buttons dynamically to
+    // prevent bots from clicking them and posting feedback on an article. Additionally, we have an input that is hidden from
+    // the user. If a bot enters text in that input, which it likely will (bots love filling out forms), then we don't accept the
+    // form submission
+    function generateFeedbackButtons() {
+      var $btnHelpfulYes = $('<button id="btnHelpfulYes" type="button" class="btn btn-primary gutter-left" onclick="toggleFeedback(1);">Yes</button>');
+      var $btnHelpfulNo = $('<button id="btnHelpfulNo" type="button" class="btn btn-primary gutter-left-sm" onclick="toggleFeedback(0);">No</button>');
+
+      $('#divWasHelpful').append($btnHelpfulYes);
+      $('#divWasHelpful').append($btnHelpfulNo);
+    }
+    function attemptAddFeedback(e) {
+      if ($('#honeyPot').val() !== '') {
+        e.preventDefault();
+        window.location.reload();
+      }
+    }
+
+    function cancelFeedback() {
+      $('#ctl00_ctl00_cpContent_cpContent_txtComments').val('');
+      $('#divHelpfulComments, #divHelpfulYesNo').toggle();
+    }
+
+    function confirmDeleteFeedback(id) {
+      if (confirm('Are you sure you want to delete this feedback? This cannot be undone.')) {
+        $('#ctl00_ctl00_cpContent_cpContent_hdnFeedbackID').val(id);
+        __doPostBack('ctl00$ctl00$cpContent$cpContent$btnDeleteFeedback', '');
+      }
+    }
+
+    function toggleAddressed(id, isAddressed) {
+      $('#ctl00_ctl00_cpContent_cpContent_hdnFeedbackID').val(id);
+      $('#ctl00_ctl00_cpContent_cpContent_hdnIsAddressed').val(isAddressed);
+      __doPostBack('ctl00$ctl00$cpContent$cpContent$btnToggleAddressed', '');
+    }
+
+    $(function () {
+      
+
+      generateFeedbackButtons();
+      $('[data-toggle="popover"]').popover();
+
+      var attachmentHandler = new TeamDynamix.AttachmentHandler({
+        containerSelector: '.js-article-attachments',
+        resultLabelSelector: '#ctl00_ctl00_cpContent_cpContent_lblResults_lblResults-label',
+        baseControllerUrl: '/TDClient/30/Portal/Shared/Attachments',
+        antiForgeryToken: 'ispuhiewESQDav53KOzPgMv9KoARbxfjDxlTRsTntslBhWozqCfcfQPqjfqsH6fa6K1HxXvvt31kfj8J2jYaU9oyclE1:Fm4Y9-dbU1GWk-gVMwrmtSTO5g8hQoBXC5sC5r4ygdTx48dznMwMBrq_c72K8DAsrQU4dGxrgufqzOE685GjBKIOlMU1',
+        itemId: 1461,
+        componentId: 26,
+        feedId: 'articleFeed',
+        readOnly: false
+      });
+
+      $('#btnShare').on('click', function () {
+        shareArticle();
+      });
+
+      // Don't try and update the table styles if the user wanted to opt out.
+      $('#ctl00_ctl00_cpContent_cpContent_divBody table:not(.SkipTableFixup)').each(function () {
+        var padding = $(this).attr('cellpadding');
+        var spacing = $(this).attr('cellspacing');
+
+        $(this).css("border-collapse", "separate");
+
+        if (spacing) {
+          $(this).css("border-spacing", spacing + "px");
+        }
+
+        $(this).find('td').each(function () { $(this).css('padding', padding + 'px') });
+      });
+
+      
+    });
+
+    
+  </script>
+
+
+
+<meta property="og:title" content="Personal Webpage Responsibility Acknowledgement" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://atlas.utdallas.edu/TDClient/30/Portal/KB/ArticleDet?ID=1461" />
+<meta property="og:image" content="https://atlas.utdallas.edu/TDPortal/BE/Logo/2/30" />
+<meta property="og:description" content="This article outlines the responsibilities of users, including employees, students, and faculty, who create and maintain personal webpages to ensure that the content is appropriate, accurate, and accessible to all users." />
+  <meta property="og:site_name" content="The University of Texas at Dallas - Knowledge Base" />
+  <meta property="article:section" content="UTD Hosted Personal Webpage Configuration" />
+  <meta property="article:published_time" content="2025-09-05T13:58Z" />
+  <meta property="article:modified_time" content="2026-04-15T15:46Z" />
+    <meta property="article:tag" content="personal-webpage" /><title>
+	Article - Personal Webpage Responsibi...
+</title></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR9V5K73"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<form method="post" action="/TDClient/30/Portal/KB/ArticleDet?ID=1461" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/TDClient/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZMSMQxVWLi4fik2rw1_u_hZsCNzwv5c621ov6_ZX_wzTt5vh-g2&amp;t=638901392248157332" type="text/javascript"></script>
+
+
+<script src="/TDClient/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1NXOAgTb3J37FC1L2PfbYYFmSPm-ANa7n6FP0x7BAsbHeL4jfY3ptd1q7zKKVI7DbuXZcwEoKOwj9WxCI1VrQlbWE1Trg1t1GmJDN43kQMJsB7X8tw2&amp;t=ffffffff93d1c106" type="text/javascript"></script>
+<script src="/TDClient/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvmVxW3-Ljsg_2Hna32smxrg-6ogyYAN3UTPsJQ8m1uwzn_kuf2Wpne6NSFmYui3h0wCQhJN3ZUiLTNkvhiIgZpq74-lKmofUPQGJ8own8RI2_mwAcmvlSj2WBnqwm5Wj4cyNvv81&amp;t=5c0e0825" type="text/javascript"></script>
+<script src="/TDClient/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OLdGoo5BVWQ_Eo60QZTEhEcHeiVfwgY9tLCgzdZ5TRwvrwYEnOvujbNccOVLUfWtUg4HivSIsewg6JABxkBGEqVVV64eiRyCAsPDqh6tUioISUQKB74sWMO4Er2mHrWEIWs_sBM1&amp;t=5c0e0825" type="text/javascript"></script>
+<script src="/TDClient/WebResource.axd?d=xtfVMqdF1exC2MBVkOJwMveStDR5kg3dbZWgIXMXZmB1xXom6CcIrWFgHa7jsp4qJuFW2L5XShudyzlBsIO3JhCfiU5HmL2BDz__mCv9dznmBlEMS7LvcYg6wTdPTrAXIXI2CvtjwlnpZd-j4Zpsx2wG_uA1&amp;t=639119671880000000" type="text/javascript"></script>
+<script src="/TDClient/WebResource.axd?d=sp7vCoAo-SSYfpsQ1sYBBeEDnwCGxDYEwZCM0ler88yoVZIPDXMk1C3XF2L2L0xrbB8Rvhli51TswRlmPIOCZgaY58lKhPr-Pv1jTFJ1oUAu7x6RDtNFZUxbtxs3KYQGLK6FpPD5bKuB0e0NmS9HkAqRVks1&amp;t=639119671880000000" type="text/javascript"></script>
+<script src="/TDClient/WebResource.axd?d=icMURy63hv40LPPfq4rTvmm-RfB_YkC6rEEF_2QOO68q3TseXYNBetRKKgBXJ8mn2e8UIgCPiV23HaQUZbjySMHqSgmYZgLcYltBqwD2_EK8aQ08zBuqc3ZBVZITQrbtn6w46dRxFLibMIQg0Aho73rn8Rpxrzg5YMG_JR0UOrUR0wlZ0&amp;t=639119671880000000" type="text/javascript"></script>
+<script src="/TDClient/WebResource.axd?d=1HpFfNpwNihNfEP1lyJHvdPVqbv8KRoFH4-_ZORUgPOP-bqmmtIJRvFQc7828Vf59O_-fdBXcnwdv-hYp5RptPuHmMR0kGQM0_3rS4Z7sKfC7jy9Cc_8fyfcUWa8psszacEQlAXHPXmNwyRymbGSywEmhrE1&amp;t=639119671880000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+CKEditor_TextBoxEncode('ctl00_ctl00_cpContent_cpContent_shareBody_txtBody', 0); if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="784CA02E" />
+</div>
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$smMain', 'aspnetForm', ['tctl00$ctl00$cpContent$cpContent$UpdatePanel1','','tctl00$ctl00$cpContent$cpContent$upFeedbackGrid','','tctl00$ctl00$cpContent$cpContent$lblResults$ctl00',''], ['ctl00$ctl00$cpContent$cpContent$btnSubmitComments','','ctl00$ctl00$cpContent$cpContent$btnToggleSubscribe','','ctl00$ctl00$cpContent$cpContent$btnToggleFavorite','','ctl00$ctl00$cpContent$cpContent$btnSendShare',''], [], 90, 'ctl00$ctl00');
+//]]>
+</script>
+
+<div id="ctl00_ctl00_upMain" style="display:none;">
+	
+    <div id="ctl00_ctl00_pbMain" class="progress-box-container"><div class="progress-box-body"><div class="well shadow"><h2 class="h4 gutter-top-none">Updating...</h2><div class="progress" style="margin-bottom: 0;"><div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></div></div></div>
+  
+</div>
+
+<header id="ctl00_ctl00_navHeader" role="banner">
+
+  <div id="divMstrHeader" class="master-header NoPrint" style="background-color: #fff;">
+
+  <div style="background: linear-gradient(180deg, #136D4B 1%, #154734 100%); color: #FFFFFF">
+    <div class="container">
+        <div class="row">
+            <a href="https://www.utdallas.edu/" style="display: inline-block">
+                <img src="https://websvcs.utdallas.edu/shared/svg/utd-wordmark-1line-white-web.svg" alt="The University of Texas at Dallas" style="height: 39px; width: 302.25px; padding: 0.6em">
+            </a>
+            <div style="display: inline-flex; float: right">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" style="border: none; border-radius: 0; height: 39px; line-height: 39px; background: rgba(0, 0, 0, 0); color: #FFFFFF; padding: 0 12px">
+                        <span><i class="fa fa-caret-down"></i> QUICK LINKS</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" style="margin-right: 2px">
+                        <li><a class="dropdown-item" href="https://oitapps.utdallas.edu/oitapps/helpdesk/chat/" target="_blank">Chat with OIT</a></li>
+                        <li><hr class="dropdown-divider" style="margin: 9px 0"></li>
+                        <li><a class="dropdown-item" href="https://oit.utdallas.edu/" target="_blank">OIT Homepage</a></li>
+                        <li><a class="dropdown-item" href="https://atec.utdallas.edu/" target="_blank">ATEC Homepage</a></li>
+                        <li><a class="dropdown-item" href="https://www.utdallas.edu/research/" target="_blank">Research Homepage</a></li>
+                        <li><hr class="dropdown-divider" style="margin: 9px 0"></li>
+                        <li><a class="dropdown-item" href="https://galaxy.utdallas.edu/" target="_blank">Galaxy</a></li>
+                        <li><a class="dropdown-item" href="https://elearning.utdallas.edu/" target="_blank">eLearning</a></li>
+                        <li><a class="dropdown-item" href="https://www.utdallas.edu/directory/" target="_blank">Directory</a></li>
+                        <li><a class="dropdown-item" href="https://www.utdallas.edu/maps/" target="_blank">Maps</a></li>
+                        <li><hr class="dropdown-divider" style="margin: 9px 0"></li>
+                        <li><a class="dropdown-item" href="https://atlas.utdallas.edu/TDNext/" target="_blank">Technician Login</a></li>
+                    </ul>
+                </div>
+                <div style="height: 39px; line-height: 39px">
+                    •
+                </div>
+                <a href="https://atlas.utdallas.edu/TDClient/30/Portal/SiteMap" style="height: 39px; line-height: 39px; padding-left: 12px; padding-right: 12px; color: #FFFFFF">SITE MAP</a>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+  <div class="logo-header-full hidden-xs">
+
+    
+    <div class="pull-left">
+      <a href="#mainContent" class="sr-only sr-only-focusable">Skip to main content</a>
+    </div>
+
+
+    <div id="ctl00_ctl00_divPageHeader" class="container logo-header clearfix" style="padding: 5px;">
+
+      <div id="divLogo" class="pull-left logo-container">
+
+        <a href="https://atlas.utdallas.edu/"
+           target="_blank">
+          <img src="/TDPortal/BE/Logo/2/30" alt="Atlas Service Portal" class="js-logo img-responsive" />
+          <span class="sr-only">(opens in a new tab)</span>
+        </a>
+
+      </div>
+
+      <div class="master-header-right pull-right padding-top padding-bottom">
+
+        
+
+          <div class="pull-left topLevelSearch input-group">
+            <div id="SiteSearch-d2672094c15d4d28b8fc46387777644e" class="gutter-bottom input-group site-search" style="max-width: 400px;">
+  <div id="SiteSearch-dropdown-d2672094c15d4d28b8fc46387777644e" class="input-group-btn">
+    <button type="button" id="SiteSearch-filter-d2672094c15d4d28b8fc46387777644e" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" title="Filter your search by category" data-component="all">
+      <span class="fa-solid fa-solid fa-earth-americas"></span><span class="fa-solid fa-fw fa-nopad fa-caret-down" aria-hidden="true"></span>
+      <span class="sr-only">
+        Filter your search by category. Current category:
+        <span class="js-current-component">All</span>
+      </span>
+    </button>
+    <ul tabindex="-1" aria-label="Filter your search by category" role="menu" class="dropdown-menu" >
+      <li>
+        <a role="menuitem" href="javascript:void(0);" data-component-text="All" data-component="all" data-component-icon="fa-solid fa-earth-americas" title="Search all areas">
+          <span class="fa-solid fa-fw fa-nopad fa-earth-americas" aria-hidden="true"></span>
+          All
+        </a>
+      </li>
+
+      <li aria-hidden="true" class="divider"></li>
+
+        <li role="presentation">
+          <a role="menuitem" href="javascript:void(0);" data-component-text="Knowledge Base" data-component="kb" data-component-icon="fa-lightbulb" title="Search Knowledge Base">
+            <span class="fa-regular fa-fw fa-nopad fa-lightbulb" aria-hidden="true"></span>
+            Knowledge Base
+          </a>
+        </li>
+
+        <li role="presentation">
+          <a role="menuitem" href="javascript:void(0);" data-component-text="Service Catalog" data-component="sc" data-component-icon="fa-compass" title="Search Service Catalog">
+            <span class="fa-solid fa-fw fa-nopad fa-compass" aria-hidden="true"></span>
+            Service Catalog
+          </a>
+        </li>
+
+    </ul>
+  </div>
+
+  <label class="sr-only" for="SiteSearch-text-d2672094c15d4d28b8fc46387777644e">Search the client portal</label>
+
+  <input id="SiteSearch-text-d2672094c15d4d28b8fc46387777644e" type="text" class="form-control" autocomplete="off" placeholder="Search the client portal" title="To search for items with a specific tag, enter the # symbol followed by the name of the tag.
+To search for items using exact match, place double quotes around your text." />
+
+  <span class="input-group-btn">
+    <button id="SiteSearch-button-d2672094c15d4d28b8fc46387777644e" class="btn btn-default" type="button" title="Search">
+      <span class="fa-solid fa-fw fa-nopad fa-search blue" aria-hidden="true"></span>
+      <span class="sr-only">Search</span>
+    </button>
+  </span>
+</div>
+
+<script>
+  $(function() {
+    var siteSearch = new TeamDynamix.SiteSearch({
+      searchUrl: "/TDClient/30/Portal/Shared/Search",
+      autocompleteSearchUrl: '/TDClient/30/Portal/Shared/AutocompleteSearch',
+      autocompleteResultsPosition: 'fixed',
+      autocompleteResultsZIndex: 1000,
+      searchTextBoxSelector: '#SiteSearch-text-d2672094c15d4d28b8fc46387777644e',
+      searchComponentFilterButtonSelector: '#SiteSearch-filter-d2672094c15d4d28b8fc46387777644e',
+      searchButtonSelector: '#SiteSearch-button-d2672094c15d4d28b8fc46387777644e',
+      searchFilterDropdownSelector: '#SiteSearch-dropdown-d2672094c15d4d28b8fc46387777644e',
+      showKnowledgeBaseOption: true,
+      showServicesOption: true,
+      showForumsOption: false,
+      autoFocusSearch: false
+    });
+  });
+</script>
+          </div>
+
+        
+          <div title="Sign In" class="pull-right gutter-top-sm">
+            <a href="/TDClient/30/Portal/Login.aspx?ReturnUrl=%2fTDClient%2f30%2fPortal%2fKB%2fArticleDet%3fID%3d1461">
+              Sign In
+            </a>
+          </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+
+  <nav id="ctl00_ctl00_mainNav" class="navbar navbar-default themed tdbar" aria-label="Primary">
+    <div id="navContainer" class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="pull-left navbar-toggle collapsed themed tdbar-button-anchored tdbar-toggle gutter-left" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="tdbar-button-anchored icon-bar"></span>
+          <span class="tdbar-button-anchored icon-bar"></span>
+          <span class="tdbar-button-anchored icon-bar"></span>
+          <span class="sr-only">Show Applications Menu</span>
+        </button>
+        <a class="navbar-brand hidden-sm hidden-md hidden-lg themed tdbar-button-anchored truncate-be" href="#">
+
+          Atlas Portal
+        </a>
+      </div>
+
+      <div id="td-navbar-collapse" class="collapse navbar-collapse">
+
+        <ul class="nav navbar-nav nav-collapsing" id="collapseMe">
+
+          
+            <li class="themed tdbar-button-anchored hidden-sm hidden-md hidden-lg">
+              <a href="/TDClient/30/Portal/Login.aspx?ReturnUrl=%2fTDClient%2f30%2fPortal%2fKB%2fArticleDet%3fID%3d1461">Sign In</a>
+            </li>
+          
+            <li id="divSearch" class="themed tdbar-button-anchored hidden-sm hidden-md hidden-lg">
+              <a href="/TDClient/30/Portal/Shared/Search" title="search">Search</a>
+            </li>
+          
+              <li id="divDesktopb25f0070-cecb-413d-a36c-fead0aeaba6e" class="themed tdbar-button-anchored">
+                <a href="/TDClient/30/Portal/Home/">Home</a>
+              </li>
+            
+              <li id="divDesktop3142d75a-f646-4b7c-9b7d-c37bb8ad4fd8" class="themed tdbar-button-anchored">
+                <a href="/TDClient/30/Portal/Home/?ID=3142d75a-f646-4b7c-9b7d-c37bb8ad4fd8">IT Support</a>
+              </li>
+            
+
+          
+            <li id="divTDRequests" class="themed tdbar-button-anchored sr-focusable">
+              <a href="/TDClient/30/Portal/Requests/ServiceCatalog">Services</a>
+            </li>
+          
+            <li id="divTDKnowledgeBase" class="themed tdbar-button-anchored sr-focusable">
+              <a href="/TDClient/30/Portal/KB/">Knowledge Base</a>
+            </li>
+          
+
+          <li class="themed tdbar-button-anchored hidden-xs more-items-button" id="moreMenu">
+            <a data-toggle="dropdown" title="More Applications" href="javascript:;">
+              <span class="sr-only">More Applications</span>
+              <span class="fa-solid fa-ellipsis-h" aria-hidden="true"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right themed tdbar" id="collapsed"></ul>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+  </div>
+
+  </header>
+
+
+
+<div id="navShim" class="hidden-xs hidden-sm"></div>
+<main role="main">
+  <div id="content">
+    <div id="mainContent" tabindex="-1"></div>
+    
+
+  <nav id="ctl00_ctl00_cpContent_divTabHeader" class="tdbar-sub NoPrint hidden-xs navbar-subnav" aria-label="Knowledge Base">
+      <a href="#kbContent" class="sr-only sr-only-focusable">Skip to Knowledge Base content</a>
+      <div class="container clearfix">
+        <ul class="nav navbar-nav js-submenu" id="kbSubMenu" style="margin-left: -15px;">
+          
+          <li>
+            <a href="/TDClient/30/Portal/KB/Search">Search <span class="sr-only">Articles</span></a>
+          </li>
+
+          
+          
+        </ul>
+      </div>
+    </nav>
+  
+
+  <div id="kbContent" class="container gutter-top gutter-bottom" tabindex="-1" style="outline:none;">
+    
+
+<input type="hidden" name="ctl00$ctl00$cpContent$cpContent$hdnFeedbackID" id="ctl00_ctl00_cpContent_cpContent_hdnFeedbackID" />
+<input type="hidden" name="ctl00$ctl00$cpContent$cpContent$hdnIsAddressed" id="ctl00_ctl00_cpContent_cpContent_hdnIsAddressed" />
+
+<span id="ctl00_ctl00_cpContent_cpContent_lblResults_ctl00" aria-live="polite" aria-atomic="true"><span id="ctl00_ctl00_cpContent_cpContent_lblResults_lblResults-label" class="red tdx-error-text"></span></span>
+
+<a id="ctl00_ctl00_cpContent_cpContent_btnSendShare" tabindex="-1" class="hidden" aria-hidden="true" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$cpContent$cpContent$btnSendShare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Blank</a>
+
+<div class="clearfix">
+  <nav aria-label="Breadcrumb">
+    <ol class="breadcrumb pull-left">
+      <li><a href="/TDClient/30/Portal/KB/">Knowledge Base</a></li><li><a href="/TDClient/30/Portal/KB/?CategoryID=10">Communication and Collaboration</a></li><li><a href="/TDClient/30/Portal/KB/?CategoryID=34">Web Services</a></li><li><a href="/TDClient/30/Portal/KB/?CategoryID=135">UTD Hosted Personal Webpages</a></li><li class="active"><a href="/TDClient/30/Portal/KB/?CategoryID=413">UTD Hosted Personal Webpage Configuration</a></li><li class="active">Personal Webpage Responsibility Acknowledgement</li>
+    </ol>
+  </nav>
+  <span class="js-open-monitor" style="display: none;"></span>
+</div>
+
+
+
+<div class="row gutter-top">
+
+<div id="divMainContent" class="col-md-8">
+
+<h1 class="gutter-top" style="-ms-word-wrap: break-word; word-wrap: break-word;">
+  Personal Webpage Responsibility Acknowledgement
+</h1>
+
+<div id="ctl00_ctl00_cpContent_cpContent_divTags">
+  <span class="sr-only">Tags</span>
+  <span class="fa-solid fa-tags gray gutter-right-sm" aria-hidden="true" title="Tags"></span>
+  
+      <a href="/TDClient/30/Portal/KB/Search?SearchText=%2523personal-webpage" id="ctl00_ctl00_cpContent_cpContent_rptTags_ctl00_TagControl1_lnkDisplay" title="personal-webpage">personal-webpage</a>
+
+    
+</div>
+
+
+
+<div id="ctl00_ctl00_cpContent_cpContent_divBody" class="gutter-top break-word ckeShim clearfix"><h2>Context</h2>
+
+<p>
+
+</p>
+
+<p>In order to publish or maintain a personal webpage, and in addition to the technical requirements described in&nbsp;<a href="https://atlas.utdallas.edu/TDClient/30/Portal/KB/ArticleDet?ID=11" rel="noopener noreferrer" target="_blank">Article - How to Setup Your Home Page (Personal Webpage)</a>, each user must acknowledge their personal responsibility for the compliance and upkeep of their personal webpage. Users provide this acknowledgement through the designated&nbsp;<a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=HR0ojU2c90uxbgMtFd6fbKQzebpsRM9Bi-8k1R8zW99UNTBSWUVET0VNTDQ3Nk1OVDJHSFZHVkVLTS4u" rel="noopener noreferrer" target="_blank">Microsoft Forms</a>&nbsp;process.</p>
+
+<h2>Scope</h2>
+
+<p>
+
+</p>
+
+<p>This acknowledgement applies to all faculty, staff, and students who create and manage personal webpages on the University of Texas at Dallas network or using its resources.</p>
+
+<h3>Content Responsibility</h3>
+
+<p>By publishing or maintaining a personal webpage, users acknowledge that they are solely responsible for all content they post. This includes ensuring information is accurate, up-to-date, and relevant. Users further acknowledge that they must not publish content that is illegal, offensive, or in violation of University of Texas at Dallas policies, including but not limited to those concerning harassment, discrimination, and intellectual property.</p>
+
+<h3>Accessibility</h3>
+
+<p>
+
+</p>
+
+<p>By publishing or maintaining a personal webpage, users acknowledge that they are solely responsible for all content they post. This includes ensuring information is accurate, up-to-date, and relevant. Users further acknowledge that they must not publish content that is illegal, offensive, or in violation of University of Texas at Dallas policies, including but not limited to those concerning harassment, discrimination, and intellectual property.</p>
+
+<h3>Privacy and Security</h3>
+
+<p>Users acknowledge that they must protect individuals’ privacy by not disclosing personal information without consent. Users also acknowledge the need to implement reasonable security measures to protect their webpages from unauthorized access or cyber threats.</p>
+
+<h3>Compliance</h3>
+
+<p>
+
+</p>
+
+<p>
+
+</p>
+
+<p>Users acknowledge their obligation to comply with all applicable laws, regulations, and university policies when creating and maintaining their personal webpages. The University of Texas at Dallas reserves the right to review and remove content that violates these requirements.</p>
+
+<h3>Accountability</h3>
+
+<p>
+
+</p>
+
+<p>Users acknowledge that they are accountable for any consequences resulting from the content they publish. Users should regularly review and update their webpages to ensure ongoing compliance with these responsibilities.</p>
+
+<h2>Enforcement</h2>
+
+<p>
+
+</p>
+
+<p>Failure to uphold the responsibilities acknowledged in this document may result in the removal of the personal webpage.</p>
+</div>
+
+<div id="ctl00_ctl00_cpContent_cpContent_divFeedback2" class="well gutter-top-lg">
+
+  <div class="row" id="divHelpfulYesNo">
+    <div class="col-sm-7">
+      
+        <div>
+          <a href="/TDClient/30/Portal/Login.aspx?ReturnUrl=%2fTDClient%2f30%2fPortal%2fKB%2fArticleDet%3fID%3d1461">Sign in to leave feedback</a>
+        </div>
+      
+    </div>
+    <div class="col-sm-5 text-right">
+      <div id="ctl00_ctl00_cpContent_cpContent_UpdatePanel1" aria-live="polite" aria-atomic="true">
+	
+          0 reviews
+        
+</div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+<div class="tab-content gutter-top gutter-bottom">
+  
+  <div id="ctl00_ctl00_cpContent_cpContent_upFeedbackGrid">
+	
+        <a id="ctl00_ctl00_cpContent_cpContent_btnToggleAddressed" tabindex="-1" class="hidden" aria-hidden="true" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$cpContent$cpContent$btnToggleAddressed&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Blank</a>
+        <a id="ctl00_ctl00_cpContent_cpContent_btnDeleteFeedback" tabindex="-1" class="hidden" aria-hidden="true" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$cpContent$cpContent$btnDeleteFeedback&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Blank</a>
+        
+      
+</div>
+    
+    
+
+    
+</div>
+</div>
+
+<div class="col-md-4">
+
+
+
+    <a id="ctl00_ctl00_cpContent_cpContent_btnToggleSubscribe" tabindex="-1" class="hidden" aria-hidden="true" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$cpContent$cpContent$btnToggleSubscribe&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Blank</a>
+
+<a id="ctl00_ctl00_cpContent_cpContent_btnToggleFavorite" tabindex="-1" class="hidden" aria-hidden="true" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$cpContent$cpContent$btnToggleFavorite&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Blank</a>
+
+<a class="DetailAction print-article" href="/TDClient/30/Portal/KB/PrintArticle?ID=1461" rel="nofollow" target="_blank">  <span class="fa-solid fa-print fa-fw" aria-hidden="true"></span>
+Print Article</a>
+
+<div id="ctl00_ctl00_cpContent_cpContent_divKB" class="panel panel-default">
+
+  <div class="panel-heading">
+    <h2 class="h3 panel-title">Related Articles (3)</h2>
+  </div>
+
+  <div class="panel-body">
+    
+        <div id="ctl00_ctl00_cpContent_cpContent_rptArticles_ctl00_ctlArticle_divContainer" class="gutter-top-sm gutter-bottom-lg">
+  <div class="clearfix">
+    <div class="pull-left font-md">
+      <a target="_blank" href="https://atlas.utdallas.edu/TDClient/30/Portal/KB/ArticleDet?ID=336">CGI Under Your Own Home Page (Personal Webpage)</a>
+    </div>
+  </div>
+  <div id="ctl00_ctl00_cpContent_cpContent_rptArticles_ctl00_ctlArticle_divSummary">
+    This article has instructions to set up CGI for your personal web pages.
+  </div>
+  
+</div>
+      
+        <div id="ctl00_ctl00_cpContent_cpContent_rptArticles_ctl01_ctlArticle_divContainer" class="gutter-top-sm gutter-bottom-lg">
+  <div class="clearfix">
+    <div class="pull-left font-md">
+      <a target="_blank" href="https://atlas.utdallas.edu/TDClient/30/Portal/KB/ArticleDet?ID=11">How to Setup Your Home Page (Personal Webpage)</a>
+    </div>
+  </div>
+  <div id="ctl00_ctl00_cpContent_cpContent_rptArticles_ctl01_ctlArticle_divSummary">
+    This article provides instructions on how to setup and begin configuration of your personal webpage.
+  </div>
+  
+</div>
+      
+        <div id="ctl00_ctl00_cpContent_cpContent_rptArticles_ctl02_ctlArticle_divContainer" class="gutter-top-sm gutter-bottom-lg">
+  <div class="clearfix">
+    <div class="pull-left font-md">
+      <a target="_blank" href="https://atlas.utdallas.edu/TDClient/30/Portal/KB/ArticleDet?ID=10">Personal Webpage Troubleshooting</a>
+    </div>
+  </div>
+  <div id="ctl00_ctl00_cpContent_cpContent_rptArticles_ctl02_ctlArticle_divSummary">
+    The Office of Information Technology UNIX group has provided a simple script that will fix permissions on all of the files in your public_html folder at once.&#160;Users will be able to fix their permissions issues with the instructions provided in this article.
+  </div>
+  
+</div>
+      
+  </div>
+
+</div>
+
+<div id="ctl00_ctl00_cpContent_cpContent_divRelatedServicesAndOfferings" class="panel panel-default">
+
+  <div class="panel-heading">
+    <h3 class="panel-title">Related Services / Offerings (1)</h3>
+  </div>
+
+  <div class="panel-body">
+    
+        <div class="gutter-top-sm gutter-bottom-lg">
+          <div class="clearfix">
+            <div class="pull-left font-md">
+              <a href="/TDClient/30/Portal/Requests/ServiceDet?ID=49">UTD Hosted Personal Webpages</a>
+            </div>
+          </div>
+          <div>
+            UTD provides hosting for personal webpages for all current students, faculty, and staff at UT Dallas.
+          </div>
+        </div>
+      
+  </div>
+
+</div>
+
+<div id="divAttachments" class="js-article-attachments"></div>
+
+</div>
+
+</div>
+
+<div id="ctl00_ctl00_cpContent_cpContent_divProgress" style="display: none; z-index: 60;">
+  <div id="ctl00_ctl00_cpContent_cpContent_pbMain" class="progress-box-container"><div class="progress-box-body"><div class="well shadow"><h2 class="h4 gutter-top-none">Deleting...</h2><div class="progress" style="margin-bottom: 0;"><div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></div></div></div>
+</div>
+
+
+
+  </div>
+
+
+  </div>
+</main>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+setNavPosition('TDKnowledgeBase');window.CKEDITOR_BASEPATH = 'https://atlas.utdallas.edu/TDPortal/Content/ckeditor/';
+//]]>
+</script>
+<script src="https://atlas.utdallas.edu/TDPortal/Content/ckeditor/ckeditor.js?t=C6HH5UF" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var CKEditor_Controls=[],CKEditor_Init=[];function CKEditor_TextBoxEncode(d,e){var f;if(typeof CKEDITOR=='undefined'||typeof CKEDITOR.instances[d]=='undefined'){f=document.getElementById(d);if(f)f.value=f.value.replace(/</g,'&lt;').replace(/>/g,'&gt;');}else{var g=CKEDITOR.instances[d];if(e&&(typeof Page_BlockSubmit=='undefined'||!Page_BlockSubmit)){g.destroy();f=document.getElementById(d);if(f)f.style.visibility='hidden';}else g.updateElement();}};(function(){if(typeof CKEDITOR!='undefined'){var d=document.getElementById('ctl00_ctl00_cpContent_cpContent_shareBody_txtBody');if(d)d.style.visibility='hidden';}var e=function(){var f=CKEditor_Controls,g=CKEditor_Init,h=window.pageLoad,i=function(){for(var j=f.length;j--;){var k=document.getElementById(f[j]);if(k&&k.value&&(k.value.indexOf('<')==-1||k.value.indexOf('>')==-1))k.value=k.value.replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&');}if(typeof CKEDITOR!='undefined')for(var j=0;j<g.length;j++)g[j].call(this);};window.pageLoad=function(j,k){if(k.get_isPartialLoad())setTimeout(i,0);if(h&&typeof h=='function')h.call(this,j,k);};if(typeof Page_ClientValidate=='function'&&typeof CKEDITOR!='undefined')Page_ClientValidate=CKEDITOR.tools.override(Page_ClientValidate,function(j){return function(){for(var k in CKEDITOR.instances){if(document.getElementById(k))CKEDITOR.instances[k].updateElement();}return j.apply(this,arguments);};});setTimeout(i,0);};if(typeof Sys!='undefined'&&typeof Sys.Application!='undefined')Sys.Application.add_load(e);if(window.addEventListener)window.addEventListener('load',e,false);else if(window.attachEvent)window.attachEvent('onload',e);})();CKEditor_Controls.push('ctl00_ctl00_cpContent_cpContent_shareBody_txtBody');
+CKEditor_Init.push(function(){if(typeof CKEDITOR.instances['ctl00_ctl00_cpContent_cpContent_shareBody_txtBody']!='undefined' || !document.getElementById('ctl00_ctl00_cpContent_cpContent_shareBody_txtBody')) return;CKEDITOR.replace('ctl00_ctl00_cpContent_cpContent_shareBody_txtBody',{"autoGrow_maxHeight" : 175, "autoGrow_minHeight" : 175, "contentsCss" : ['https://atlas.utdallas.edu/TDPortal/Content/ckeditor/contents.css', '/TDPortal/Content/FontAwesome/css/fontawesome.min.css', '/TDPortal/Content/FontAwesome/css/brands.min.css', '/TDPortal/Content/FontAwesome/css/regular.min.css', '/TDPortal/Content/FontAwesome/css/solid.min.css', '/TDPortal/Content/FontAwesome/css/v4-shims.min.css'], "height" : "175", "htmlEncodeOutput" : true, "image_previewText" : " ", "removePlugins" : "magicline,devtools,templates,elementspath,fontawesome,youtube,uploadimage,simpleimage,remoteimageblocker", "title" : "Message", "toolbar" : "TDSimple"}); });
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":500,"dynamicLayout":true}, null, null, $get("ctl00_ctl00_upMain"));
+});
+//]]>
+</script>
+</form>
+
+
+
+
+
+  <footer role="contentinfo">
+
+    <div class="master-footer">
+      <div style="background-color: #E87500; height: 20px; margin-top: 20px"></div>
+<div style="background-color: #154734; color: #FFFFFF; padding: 50px 0 20px">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4" style="font-size: 21px; margin-bottom: 30px">
+                <p>800 W. Campbell Road<br>Richardson, Texas 75080-3021</p>
+                <p><a style="color: #FFFFFF" href="tel:972-883-2111">972-883-2111</a></p>
+            </div>
+            <div class="col-sm-12 col-lg-4" style="margin-bottom: 40px">
+                <h2 style="font-size: 18px; border-bottom: 2px solid #E87500; padding-bottom: 10px; margin-bottom: 20px; color: #FFFFFF">COPYRIGHT INFORMATION</h2>
+                <p>
+                    <em>© The University of Texas at Dallas</em>
+                    <br>
+                    <a style="color: #FFFFFF" href="https://atlas.utdallas.edu/TDClient/30/Portal/Requests/ServiceDet?ID=1">Questions or comments about this page?</a>
+                </p>
+            </div>
+            <div class="col-sm-12 col-lg-4" style="margin-bottom: 40px">
+                <h2 style="font-size: 18px; border-bottom: 2px solid #E87500; padding-bottom: 10px; margin-bottom: 20px; color: #FFFFFF">STAY CONNECTED WITH UT DALLAS</h2>
+                <p>
+                    <a href="https://www.facebook.com/utdallas"><img style="width: 38px; height: 38px; margin-right: 8px" src="https://oitapps.utdallas.edu/oitapps/images/atlas/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/ut_dallas"><img style="width: 38px; height: 38px; margin-right: 8px" src="https://oitapps.utdallas.edu/oitapps/images/atlas/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/user/UTDallasComets"><img style="width: 38px; height: 38px; margin-right: 8px" src="https://oitapps.utdallas.edu/oitapps/images/atlas/youtube.png" alt="YouTube"></a>
+                    <a href="https://www.linkedin.com/school/university-of-texas-at-dallas/"><img style="width: 38px; height: 38px; margin-right: 8px" src="https://oitapps.utdallas.edu/oitapps/images/atlas/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/ut_dallas/"><img style="width: 38px; height: 38px; margin-right: 8px" src="https://oitapps.utdallas.edu/oitapps/images/atlas/instagram.png" alt="Instagram"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+      
+    </div>
+
+  </footer>
+
+
+
+<script>
+
+    
+    
+
+      // Inject the Google Analytics isogram. This must happen here because it
+      // cannot be injected through an external javascript library.
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    
+
+      // Per Incident #6707155. Need to focus on img. pseudo-class :focus-within is not supported in IE
+      (function ($) {
+        var $anchor = $('#divLogo a');
+        var $beLogo = $('#divLogo a img');
+
+        $anchor.focus(function () {
+          $beLogo.addClass('accessibility-focus-on-logo');
+        }).blur(function () {
+          $beLogo.removeClass('accessibility-focus-on-logo');
+        });
+
+        
+        
+          const queryParams = new URLSearchParams(window.location.search);
+          let showChatbot = true;
+          if (queryParams.has('nobot')) {
+            const nobotFlag = queryParams.get('nobot');
+            if (nobotFlag === '1' || nobotFlag === 'true') {
+              showChatbot = false;
+            }
+          }
+
+          if(showChatbot) {
+            $.ajax({
+              url: "/TDClient/30/Portal/Chatbots/GetScript",
+              type: "GET",
+              dataType: 'text',
+              success: function (data) {
+                
+                var jQueryAjaxSettingsCache = jQuery.ajaxSettings.cache;
+                jQuery.ajaxSettings.cache = true;
+                $(document.body).append(data);
+                jQuery.ajaxSettings.cache = jQueryAjaxSettingsCache;
+              }
+            });
+          }
+        
+
+        window.addEventListener("message", (event) => {
+
+          // Only accept events that come from the same origin
+          if (event.origin != window.location.origin) {
+            return;
+          }
+
+          switch (event.data.type) {
+
+            case "authenticate-using-popup":
+              handleAuthenticateUsingPopup(event.data.payload);
+              break;
+
+            case "authenticated-successfully":
+              handleAuthenticatedSuccessfully(event.data.payload);
+              break;
+
+            default:
+              break;
+          }
+
+        });
+
+        function handleAuthenticateUsingPopup(payload) {
+          let loginUrl = '/TDClient/30/Portal/Login.aspx';
+
+          if (payload.successCallbackUrl) {
+            loginUrl += '?SuccessCallbackUrl=' + payload.successCallbackUrl;
+          }
+
+          window.open(loginUrl, "_blank", "popup=1");
+        }
+
+        function handleAuthenticatedSuccessfully() {
+          event.source.close();
+          window.location.href = window.location.href;
+        }
+    })(jQuery);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+env,algo,seed,reward_last_avg10,reward_best_avg10,mean_alpha_using,mean_reset_rate,mean_combined_signal,event_triggers,force_triggers,periodic_triggers,run_dir
+Hopper-v4,P3O-dyn+EvtSBP+AdaReset+HardDistill,0,183.322000,229.418000,0.274471,0.015593,0.699077,7,0,0,C:\Users\33277\Desktop\p3o_runs\Hopper-v4_P3O-dyn+EvtSBP+AdaReset+HardDistill_seed0_steps200000

@@ -1,0 +1,201 @@
+References download manifest
+Total target references: 33
+
+[1] Abbas, Z., Zhao, R., Modayil, J., White, A., & Sutton, R. S. (2023). Loss of plasticity in continual deep reinforcement learning.
+SavedFile: 01_Abbas_2023_Loss_of_plasticity_in_continual_deep_reinforcement_learning.pdf
+SourceURL: https://proceedings.mlr.press/v232/abbas23a/abbas23a.pdf
+Status: downloaded_pdf
+Bytes: 3264909
+
+[2] Ahn, H., Hyeon, J., Oh, Y., Kim, M., & Moon, I.-C. (2024). Reset & distill: A recipe for overcoming negative transfer in continual reinforcement learning.
+SavedFile: 02_Ahn_2024_Reset_and_distill.pdf
+SourceURL: https://arxiv.org/pdf/2403.05066
+Status: downloaded_pdf
+Bytes: 1595686
+
+[3] Aljundi, R., Babiloni, F., Elhoseiny, M., Rohrbach, M., & Tuytelaars, T. (2018). Memory aware synapses: Learning what (not) to forget.
+SavedFile: 03_Aljundi_2018_Memory_aware_synapses.pdf
+SourceURL: https://arxiv.org/pdf/1711.09601
+Status: downloaded_pdf
+Bytes: 1346118
+
+[4] Arulkumaran, K., Deisenroth, M. P., Brundage, M., & Bharath, A. A. (2017). Deep reinforcement learning: A brief survey.
+SavedFile: 04_Arulkumaran_2017_Deep_reinforcement_learning_a_brief_survey.pdf
+SourceURL: https://arxiv.org/pdf/1708.05866
+Status: downloaded_pdf
+Bytes: 6418022
+
+[5] Baddeley, A. (2003). Working memory: Looking back and looking forward.
+SavedFile: 05_Baddeley_2003_Working_memory_looking_back_and_looking_forward.pdf
+SourceURL: https://people.uncw.edu/tothj/PSY510/Baddeley-Working%20Memory-NRN-2003.pdf
+Status: downloaded_pdf
+Bytes: 258137
+
+[6] Beaulieu, S., Frati, L., Miconi, T., Lehman, J., Stanley, K. O., Clune, J., & Cheney, N. (2020). Learning to continually learn.
+SavedFile: 06_Beaulieu_2020_Learning_to_continually_learn.pdf
+SourceURL: https://arxiv.org/pdf/2002.09571
+Status: downloaded_pdf
+Bytes: 2729626
+
+[7] Buzzega, P., Boschini, M., Porrello, A., Abati, D., & Calderara, S. (2020). Dark experience for general continual learning: A strong, simple baseline.
+SavedFile: 07_Buzzega_2020_Dark_experience_for_general_continual_learning.pdf
+SourceURL: https://arxiv.org/pdf/2004.07211
+Status: downloaded_pdf
+Bytes: 6576272
+
+[8] Chaudhry, A., Ranzato, M., Rohrbach, M., & Elhoseiny, M. (2019). Efficient lifelong learning with A-GEM.
+SavedFile: 08_Chaudhry_2019_Efficient_lifelong_learning_with_A_GEM.pdf
+SourceURL: https://openreview.net/pdf?id=Hkf2_sC5FX
+Status: downloaded_pdf
+Bytes: 2986867
+
+[9] Delange, M., Aljundi, R., Masana, M., Parisot, S., Jia, X., Leonardis, A., Slabaugh, G., & Tuytelaars, T. (2021). A continual learning survey: Defying forgetting in classification tasks.
+SavedFile: 09_Delange_2021_A_continual_learning_survey_defying_forgetting_in_classification_tasks.pdf
+SourceURL: https://arxiv.org/pdf/1909.08383
+Status: downloaded_pdf
+Bytes: 1388123
+
+[10] Dohare, S., Sutton, R. S., & Mahmood, A. R. (2022). Continual backprop: Stochastic gradient descent with persistent randomness.
+SavedFile: 10_Dohare_2022_Continual_backprop.pdf
+SourceURL: https://arxiv.org/pdf/2108.06325
+Status: downloaded_pdf
+Bytes: 8543097
+
+[11] Ebbinghaus, H. (1913). Memory: A contribution to experimental psychology.
+SavedFile: 11_Ebbinghaus_1913_Memory_a_contribution_to_experimental_psychology.pdf
+SourceURL: https://publishingimages.s3.amazonaws.com/eZineImages/PracticePerfect/840/Ebbinghaus-Memory-A-Contribution-to-Experimental-Psychology.pdf
+Status: downloaded_pdf
+Bytes: 65467
+
+[12] Farajtabar, M., Azizan, N., Mott, A., & Li, A. (2020). Orthogonal gradient descent for continual learning.
+SavedFile: 12_Farajtabar_2020_Orthogonal_gradient_descent_for_continual_learning.pdf
+SourceURL: https://proceedings.mlr.press/v108/farajtabar20a/farajtabar20a.pdf
+Status: downloaded_pdf
+Bytes: 838966
+
+[13] Kandel, E. R. (2001). The molecular biology of memory storage: A dialogue between genes and synapses.
+SavedFile: 
+SourceURL: https://personal.utdallas.edu/~tres/plasticity2009/Kandel.2001.pdf
+Status: failed: SSLError
+Bytes: 0
+
+[14] Kirkpatrick, J., Pascanu, R., Rabinowitz, N., Veness, J., Desjardins, G., Rusu, A. A., Milan, K., Quan, J., Ramalho, T., Grabska-Barwinska, A., Hassabis, D., Clopath, C., Kumaran, D., & Hadsell, R. (2017). Overcoming catastrophic forgetting in neural networks.
+SavedFile: 14_Kirkpatrick_2017_Overcoming_catastrophic_forgetting_in_neural_networks.pdf
+SourceURL: https://www.pnas.org/content/pnas/114/13/3521.full.pdf
+Status: failed: HTTPError; fallback HTTPError
+Bytes: 0
+
+[15] Li, Z., & Hoiem, D. (2016). Learning without forgetting.
+SavedFile: 15_Li_2016_Learning_without_forgetting.pdf
+SourceURL: https://arxiv.org/pdf/1606.09282
+Status: downloaded_pdf
+Bytes: 905389
+
+[16] Lopez-Paz, D., & Ranzato, M. (2017). Gradient episodic memory for continual learning.
+SavedFile: 16_Lopez-Paz_2017_Gradient_episodic_memory_for_continual_learning.pdf
+SourceURL: https://arxiv.org/pdf/1706.08840
+Status: downloaded_pdf
+Bytes: 521737
+
+[17] Mallya, A., & Lazebnik, S. (2018). PackNet: Adding multiple tasks to a single network by iterative pruning.
+SavedFile: 17_Mallya_2018_PackNet_adding_multiple_tasks_to_a_single_network_by_iterative_pruning.pdf
+SourceURL: https://arxiv.org/pdf/1711.05769
+Status: downloaded_pdf
+Bytes: 357553
+
+[18] Masse, N. Y., Grant, G. D., & Freedman, D. J. (2018). Alleviating catastrophic forgetting using context-dependent gating and synaptic stabilization.
+SavedFile: 
+SourceURL: https://www.pnas.org/doi/pdf/10.1073/pnas.1803839115
+Status: failed: HTTPError; fallback HTTPError
+Bytes: 0
+
+[19] Nguyen, C. V., Li, Y., Bui, T. D., & Turner, R. E. (2018). Variational continual learning.
+SavedFile: 19_Nguyen_2018_Variational_continual_learning.pdf
+SourceURL: https://openreview.net/pdf?id=BkQqq0gRb
+Status: downloaded_pdf
+Bytes: 1766610
+
+[20] Parisi, G. I., Kemker, R., Part, J. L., Kanan, C., & Wermter, S. (2019). Continual lifelong learning with neural networks: A review.
+SavedFile: 20_Parisi_2019_Continual_lifelong_learning_with_neural_networks_a_review.pdf
+SourceURL: https://arxiv.org/pdf/1802.07569
+Status: downloaded_pdf
+Bytes: 1553436
+
+[21] Ritter, H., Botev, A., & Barber, D. (2018). Online structured Laplace approximations for overcoming catastrophic forgetting.
+SavedFile: 21_Ritter_2018_Online_structured_Laplace_approximations_for_overcoming_catastrophic_forgetting.pdf
+SourceURL: https://arxiv.org/pdf/1805.07810
+Status: downloaded_pdf
+Bytes: 681900
+
+[22] Rolnick, D., Ahuja, A., Schwarz, J., Lillicrap, T. P., & Wayne, G. (2019). Experience replay for continual learning.
+SavedFile: 22_Rolnick_2019_Experience_replay_for_continual_learning.pdf
+SourceURL: https://arxiv.org/pdf/1810.11910
+Status: downloaded_pdf
+Bytes: 3352380
+
+[23] Rusu, A. A., Colmenarejo, S. G., Gulcehre, C., Desjardins, G., Kirkpatrick, J., Pascanu, R., Mnih, V., Kavukcuoglu, K., & Hadsell, R. (2015). Policy distillation.
+SavedFile: 23_Rusu_2015_Policy_distillation.pdf
+SourceURL: https://arxiv.org/pdf/1511.06295
+Status: downloaded_pdf
+Bytes: 727329
+
+[24] Schaul, T., Quan, J., Antonoglou, I., & Silver, D. (2015). Prioritized experience replay.
+SavedFile: 24_Schaul_2015_Prioritized_experience_replay.pdf
+SourceURL: https://arxiv.org/pdf/1511.05952
+Status: downloaded_pdf
+Bytes: 1685573
+
+[25] Schulman, J., Wolski, F., Dhariwal, P., Radford, A., & Klimov, O. (2017). Proximal policy optimization algorithms.
+SavedFile: 25_Schulman_2017_Proximal_policy_optimization_algorithms.pdf
+SourceURL: https://arxiv.org/pdf/1707.06347
+Status: downloaded_pdf
+Bytes: 2923532
+
+[26] Schwarz, J., Czarnecki, W. M., Luketina, J., Grabska-Barwinska, A., Teh, Y. W., Pascanu, R., & Hadsell, R. (2018). Progress & compress: A scalable framework for continual learning.
+SavedFile: 26_Schwarz_2018_Progress_and_compress_a_scalable_framework_for_continual_learning.pdf
+SourceURL: https://proceedings.mlr.press/v80/schwarz18a/schwarz18a.pdf
+Status: downloaded_pdf
+Bytes: 1128552
+
+[27] Serra, J., Suris, D., Miron, M., & Karatzoglou, A. (2018). Overcoming catastrophic forgetting with hard attention to the task.
+SavedFile: 27_Serra_2018_Overcoming_catastrophic_forgetting_with_hard_attention_to_the_task.pdf
+SourceURL: https://proceedings.mlr.press/v80/serra18a/serra18a.pdf
+Status: downloaded_pdf
+Bytes: 2197711
+
+[28] Shin, H., Lee, J. K., Kim, J., & Kim, J. (2017). Continual learning with deep generative replay.
+SavedFile: 28_Shin_2017_Continual_learning_with_deep_generative_replay.pdf
+SourceURL: https://arxiv.org/pdf/1705.08690
+Status: downloaded_pdf
+Bytes: 1824251
+
+[29] Sokar, G., Agarwal, R., Castro, P. S., Kumar, S., & Machado, M. C. (2023). The dormant neuron phenomenon in deep reinforcement learning.
+SavedFile: 29_Sokar_2023_The_dormant_neuron_phenomenon_in_deep_reinforcement_learning.pdf
+SourceURL: https://arxiv.org/pdf/2302.12902
+Status: downloaded_pdf
+Bytes: 5449749
+
+[30] Todorov, E., Erez, T., & Tassa, Y. (2012). MuJoCo: A physics engine for model-based control.
+SavedFile: 30_Todorov_2012_MuJoCo_a_physics_engine_for_model_based_control.html
+SourceURL: https://roboti.us/lab/index.html
+Status: saved_html
+Bytes: 7699
+
+[31] Wolczyk, M., Czarnecki, K., Grzes, M., & Kucinski, L. (2023). On the role of forgetting in fine-tuning reinforcement learning models.
+SavedFile: 31_Wolczyk_2023_On_the_role_of_forgetting_in_fine_tuning_reinforcement_learning_models.pdf
+SourceURL: https://proceedings.mlr.press/v202/wolczyk23a/wolczyk23a.pdf
+Status: failed: HTTPError
+Bytes: 0
+
+[32] Zenke, F., Poole, B., & Ganguli, S. (2017). Continual learning through synaptic intelligence.
+SavedFile: 32_Zenke_2017_Continual_learning_through_synaptic_intelligence.pdf
+SourceURL: https://proceedings.mlr.press/v70/zenke17a/zenke17a.pdf
+Status: downloaded_pdf
+Bytes: 928409
+
+[33] Zhou, H., Zhuang, Z., & Wang, D. (2025). Stay hungry, keep learning: Sustainable plasticity for deep reinforcement learning.
+SavedFile: 
+SourceURL: https://proceedings.mlr.press/v267/zhou25am/zhou25am.pdf
+Status: failed: HTTPError
+Bytes: 0
+

@@ -1,0 +1,2 @@
+env,dyn_reward,dyn_plus_ar_reward,dyn_plus_hd_reward,dyn_plus_ar_plus_hd_reward,dyn_plus_evt_plus_ar_plus_hd_reward,closedloop-a_reward,closedloop-full_reward,dyn_sps,dyn_plus_ar_sps,dyn_plus_hd_sps,dyn_plus_ar_plus_hd_sps,dyn_plus_evt_plus_ar_plus_hd_sps,closedloop-a_sps,closedloop-full_sps
+Hopper-v4,77.97 +/- 0.00,128.13 +/- 0.00,N/A,77.21 +/- 0.00,183.32 +/- 0.00,90.40 +/- 0.00,89.86 +/- 0.00,2407.0,2538.7,N/A,1081.4,823.9,2159.4,2217.9

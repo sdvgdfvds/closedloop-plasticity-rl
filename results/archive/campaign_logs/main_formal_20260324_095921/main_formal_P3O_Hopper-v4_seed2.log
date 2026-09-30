@@ -1,0 +1,13 @@
+[start] 2026-03-24T10:05:26.432355
+[task] main_formal_P3O_Hopper-v4_seed2
+[category] main
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_main_baseline_fill.py --algo P3O --env Hopper-v4 --seed 2 --steps 500000
+--------------------------------------------------------------------------------
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment Hopper-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+[done] C:\Users\33277\Desktop\p3o_runs\Hopper-v4_P3O_seed2_steps500000
+
+--------------------------------------------------------------------------------
+[end] 2026-03-24T10:08:04.378211
+[returncode] 0
+[duration_sec] 157.95

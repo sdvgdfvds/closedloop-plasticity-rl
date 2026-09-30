@@ -1,0 +1,9 @@
+sequence,steps_per_phase,algo,num_runs,final_retention_mean,final_retention_std,final_forgetting_mean,final_forgetting_std,final_eval_a_reward_mean,final_eval_a_reward_std
+Hopper-v4 -> Walker2d-v4 -> Hopper-v4,80000,PPO,10,0.636116,0.407058,162.6878,256.519882,119.8781,72.767375
+Hopper-v4 -> Walker2d-v4 -> Hopper-v4,80000,P3O,10,0.429167,0.394064,231.8879,216.295807,110.1362,84.15598
+Hopper-v4 -> Walker2d-v4 -> Hopper-v4,80000,P3O-ClosedLoopFull,20,0.466351,0.316921,147.8076,177.382316,78.5106,47.740758
+Hopper-v4 -> Walker2d-v4 -> Hopper-v4,80000,P3O-ClosedLoopMemory,20,0.757771,0.599929,116.4734,186.928711,162.79685,175.60567
+Walker2d-v4 -> HalfCheetah-v4 -> Walker2d-v4,80000,PPO,5,3.101951,2.592987,23.6818,47.3636,211.0996,81.398258
+Walker2d-v4 -> HalfCheetah-v4 -> Walker2d-v4,80000,P3O,5,4.437771,4.246925,12.447,24.894,273.2664,60.588506
+Walker2d-v4 -> HalfCheetah-v4 -> Walker2d-v4,80000,P3O-ClosedLoopFull,5,5.825552,5.707381,49.2394,98.4788,195.2456,104.157959
+Walker2d-v4 -> HalfCheetah-v4 -> Walker2d-v4,80000,P3O-ClosedLoopMemory,5,0.541105,0.683731,114.0562,108.927763,140.281,143.415016

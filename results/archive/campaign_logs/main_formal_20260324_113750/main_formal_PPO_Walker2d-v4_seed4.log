@@ -1,0 +1,13 @@
+[start] 2026-03-24T11:41:16.600533
+[task] main_formal_PPO_Walker2d-v4_seed4
+[category] main
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_main_baseline_fill.py --algo PPO --env Walker2d-v4 --seed 4 --steps 500000
+--------------------------------------------------------------------------------
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment Walker2d-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+[done] C:\Users\33277\Desktop\p3o_runs\Walker2d-v4_PPO_seed4_steps500000
+
+--------------------------------------------------------------------------------
+[end] 2026-03-24T11:44:47.594458
+[returncode] 0
+[duration_sec] 210.99

@@ -1,0 +1,9 @@
+Reference folder: C:\Users\33277\Desktop\paper_refs
+
+Potential duplicate groups
+- referencesverificationreport
+  references_verification_report.csv
+  references_verification_report.txt
+- todorov2012mujocoaphysicsengineformodelbasedcontrol
+  30_Todorov_2012_MuJoCo_a_physics_engine_for_model_based_control.html
+  30_Todorov_2012_MuJoCo_a_physics_engine_for_model_based_control.pdf

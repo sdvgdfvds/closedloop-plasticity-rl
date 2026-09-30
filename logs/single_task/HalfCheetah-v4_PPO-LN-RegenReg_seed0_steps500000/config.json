@@ -1,0 +1,10 @@
+{
+  "variant": "PPO-LN-RegenReg",
+  "env": "HalfCheetah-v4",
+  "seed": 0,
+  "cfg": {
+    "use_layernorm": true,
+    "use_regen_reg": true,
+    "weight_decay": 0.0
+  }
+}

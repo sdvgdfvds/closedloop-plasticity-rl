@@ -1,0 +1,41 @@
+Target manuscript: C:\Users\33277\Desktop\两篇论文\Neurocomputing_submission.docx
+Reference folder: C:\Users\33277\Desktop\paper_refs
+
+Verification summary
+- Total references in manuscript: 29
+- All references correspond to real publications or preprints.
+- All references are cited in the manuscript body at least once.
+- Local full-text files are present for 28/29 references.
+- Todorov et al. (2012) is metadata-verified, but the local file named .pdf is actually HTML; a clean PDF is still missing.
+- Ahn et al. (2024) has been verified against arXiv metadata. The downloaded PDF front page reflects the later ICLR 2025 version title, while the arXiv abstract page keeps the cited preprint title.
+
+Per-reference status
+- Abbas (2023): OK | cites=3 | files=01_Abbas_2023_Loss_of_plasticity_in_continual_deep_reinforcement_learning.pdf
+- Ahn (2024): OK with version note | cites=4 | files=02_Ahn_2024_Reset_and_distill.pdf | 02_Ahn_2024_Reset_and_distill_arXiv_2403.05066.pdf
+- Aljundi (2018): OK | cites=1 | files=03_Aljundi_2018_Memory_aware_synapses.pdf
+- Arulkumaran (2017): OK | cites=1 | files=03_Arulkumaran_2017_Deep_reinforcement_learning_a_brief_survey.pdf
+- Baddeley (2003): OK | cites=1 | files=04_Baddeley_2003_Working_memory_looking_back_and_looking_forward.pdf
+- Buzzega (2020): OK | cites=1 | files=07_Buzzega_2020_Dark_experience_for_general_continual_learning.pdf
+- Chaudhry (2019): OK | cites=1 | files=08_Chaudhry_2019_Efficient_lifelong_learning_with_A_GEM.pdf
+- Delange (2021): OK | cites=1 | files=09_Delange_2021_A_continual_learning_survey_defying_forgetting_in_classification_tasks.pdf
+- Dohare (2022): OK | cites=2 | files=05_Dohare_2022_Continual_backprop.pdf
+- Ebbinghaus (1913): OK | cites=1 | files=06_Ebbinghaus_1913_Memory_a_contribution_to_experimental_psychology.pdf
+- Farajtabar (2020): OK | cites=1 | files=12_Farajtabar_2020_Orthogonal_gradient_descent_for_continual_learning.pdf
+- Kandel (2001): OK | cites=1 | files=07_Kandel_2001_The_molecular_biology_of_memory_storage.pdf
+- Kirkpatrick (2017): OK | cites=2 | files=14_Kirkpatrick_2017_Overcoming_catastrophic_forgetting_in_neural_networks.pdf
+- Li (2016): OK | cites=2 | files=15_Li_2016_Learning_without_forgetting.pdf
+- Lopez-Paz (2017): OK | cites=1 | files=16_Lopez-Paz_2017_Gradient_episodic_memory_for_continual_learning.pdf
+- Mallya (2018): OK | cites=2 | files=17_Mallya_2018_PackNet_adding_multiple_tasks_to_a_single_network_by_iterative_pruning.pdf
+- Nguyen (2018): OK | cites=1 | files=19_Nguyen_2018_Variational_continual_learning.pdf
+- Parisi (2019): OK | cites=1 | files=20_Parisi_2019_Continual_lifelong_learning_with_neural_networks_a_review.pdf
+- Ritter (2018): OK | cites=1 | files=21_Ritter_2018_Online_structured_Laplace_approximations_for_overcoming_catastrophic_forgetting.pdf
+- Rolnick (2019): OK | cites=3 | files=22_Rolnick_2019_Experience_replay_for_continual_learning.pdf
+- Rusu (2015): OK | cites=2 | files=08_Rusu_2015_Policy_distillation.pdf
+- Schaul (2015): OK | cites=2 | files=09_Schaul_2015_Prioritized_experience_replay.pdf
+- Schulman (2017): OK | cites=2 | files=10_Schulman_2017_Proximal_policy_optimization_algorithms.pdf
+- Schwarz (2018): OK | cites=1 | files=26_Schwarz_2018_Progress_and_compress_a_scalable_framework_for_continual_learning.pdf
+- Serra (2018): OK | cites=1 | files=27_Serra_2018_Overcoming_catastrophic_forgetting_with_hard_attention_to_the_task.pdf
+- Sokar (2023): OK | cites=2 | files=11_Sokar_2023_The_dormant_neuron_phenomenon_in_deep_reinforcement_learning.pdf
+- Todorov (2012): Metadata verified; clean PDF missing | cites=1 | files=30_Todorov_2012_MuJoCo_a_physics_engine_for_model_based_control.html | 30_Todorov_2012_MuJoCo_a_physics_engine_for_model_based_control.pdf | 30_Todorov_2012_source_note.txt | 30_Todorov_2012_verified_metadata_note.txt
+- Zenke (2017): OK | cites=1 | files=32_Zenke_2017_Continual_learning_through_synaptic_intelligence.pdf
+- Zhou (2025): OK | cites=4 | files=13_Zhou_2025_Stay_hungry_keep_learning.html | 33_Zhou_2025_Stay_hungry_keep_learning_sustainable_plasticity_for_deep_reinforcement_learning.pdf

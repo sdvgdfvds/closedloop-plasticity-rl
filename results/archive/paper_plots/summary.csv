@@ -1,0 +1,13 @@
+env,algo,seed,final_avg10,avg_sps
+Hopper-v4,P3O-dynamic,0,111.755,3510.8448
+Hopper-v4,P3O-dynamic,1,9.408,3522.3992
+Hopper-v4,P3O-static,0,128.735,3228.6004
+Hopper-v4,P3O-static,1,46.017,3218.4238
+Hopper-v4,PPO,0,121.621,3456.3822000000005
+Hopper-v4,PPO,1,116.737,3321.2924
+Walker2d-v4,P3O-dynamic,0,269.806,3351.765
+Walker2d-v4,P3O-dynamic,1,101.57,3087.777
+Walker2d-v4,P3O-static,0,76.329,3063.9874
+Walker2d-v4,P3O-static,1,180.048,3163.4084000000003
+Walker2d-v4,PPO,0,-11.79,3123.0614
+Walker2d-v4,PPO,1,74.668,3096.782

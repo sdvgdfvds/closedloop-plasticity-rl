@@ -1,0 +1,10 @@
+| env | algo | threshold_avg10 | steps_to_threshold | success_rate | mean_reward_over_time | mean_sps |
+| --- | --- | --- | --- | --- | --- | --- |
+| Hopper-v4 | PPO | 95.34 | 42217 | 2/2 | 123.63 | 3388.8 |
+| Hopper-v4 | PPO+Cycle | 95.34 | 66014 | 2/2 | 96.92 | 3614.8 |
+| Hopper-v4 | P3O-static | 95.34 | 61919 | 2/2 | 69.91 | 3223.5 |
+| Hopper-v4 | P3O-dynamic | 95.34 | 33874 | 2/2 | 87.35 | 3516.6 |
+| Walker2d-v4 | PPO | 148.55 | 398720 | 1/2 | 19.59 | 3109.9 |
+| Walker2d-v4 | PPO+Cycle | 148.55 | 181768 | 2/2 | 40.08 | 3612.6 |
+| Walker2d-v4 | P3O-static | 148.55 | 111802 | 2/2 | 84.58 | 3113.7 |
+| Walker2d-v4 | P3O-dynamic | 148.55 | 50633 | 1/2 | 101.69 | 3219.8 |

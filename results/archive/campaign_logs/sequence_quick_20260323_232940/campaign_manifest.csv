@@ -1,0 +1,5 @@
+name,category,log_path,command
+sequence_quick_PPO_seed0,sequence,campaign_logs\sequence_quick_20260323_232940\sequence_quick_PPO_seed0.log,C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_sequence_plasticity.py --algo PPO --seed 0 --quick --force
+sequence_quick_P3O_seed0,sequence,campaign_logs\sequence_quick_20260323_232940\sequence_quick_P3O_seed0.log,C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_sequence_plasticity.py --algo P3O --seed 0 --quick --force
+sequence_quick_P3O-ClosedLoopFull_seed0,sequence,campaign_logs\sequence_quick_20260323_232940\sequence_quick_P3O-ClosedLoopFull_seed0.log,C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_sequence_plasticity.py --algo P3O-ClosedLoopFull --seed 0 --quick --force
+sequence_quick_P3O-ClosedLoopMemory_seed0,sequence,campaign_logs\sequence_quick_20260323_232940\sequence_quick_P3O-ClosedLoopMemory_seed0.log,C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_sequence_plasticity.py --algo P3O-ClosedLoopMemory --seed 0 --quick --force

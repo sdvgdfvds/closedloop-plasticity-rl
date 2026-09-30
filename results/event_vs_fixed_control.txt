@@ -1,0 +1,23 @@
+[Hopper-v4]
+seed=0 fixed=136.344 event=139.639
+seed=1 fixed=49.416 event=157.73
+seed=2 fixed=57.051 event=72.56
+seed=3 fixed=180.632 event=121.35
+seed=4 fixed=584.136 event=209.754
+{'env': 'Hopper-v4', 'shared_seeds': [0, 1, 2, 3, 4], 'n': 5, 'fixed_mean': 201.51579999999998, 'fixed_std': 220.84278438789886, 'event_mean': 140.2066, 'event_std': 50.18930767404547, 'delta_event_minus_fixed': -61.30919999999999, 'sign_flip_p': 0.75}
+
+[Walker2d-v4]
+seed=0 fixed=137.266 event=103.386
+seed=1 fixed=105.198 event=110.216
+seed=2 fixed=261.236 event=63.264
+seed=3 fixed=114.018 event=153.854
+seed=4 fixed=209.011 event=150.548
+{'env': 'Walker2d-v4', 'shared_seeds': [0, 1, 2, 3, 4], 'n': 5, 'fixed_mean': 165.3458, 'fixed_std': 67.34678205526971, 'event_mean': 116.2536, 'event_std': 37.41597721295009, 'delta_event_minus_fixed': -49.09219999999999, 'sign_flip_p': 0.375}
+
+[HalfCheetah-v4]
+seed=0 fixed=-829.905 event=-889.884
+seed=1 fixed=-801.932 event=-899.016
+seed=2 fixed=-886.228 event=-725.965
+seed=3 fixed=-851.763 event=-759.025
+seed=4 fixed=-694.333 event=-836.333
+{'env': 'HalfCheetah-v4', 'shared_seeds': [0, 1, 2, 3, 4], 'n': 5, 'fixed_mean': -812.8322000000001, 'fixed_std': 73.0665893326081, 'event_mean': -822.0446, 'event_std': 77.35259935063591, 'delta_event_minus_fixed': -9.212400000000002, 'sign_flip_p': 0.9375}

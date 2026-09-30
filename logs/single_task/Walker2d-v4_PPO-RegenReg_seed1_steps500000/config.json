@@ -1,0 +1,10 @@
+{
+  "variant": "PPO-RegenReg",
+  "env": "Walker2d-v4",
+  "seed": 1,
+  "cfg": {
+    "use_layernorm": false,
+    "use_regen_reg": true,
+    "weight_decay": 0.0
+  }
+}

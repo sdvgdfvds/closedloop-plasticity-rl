@@ -1,0 +1,26 @@
+[
+  {
+    "pair": "Hopper-v4 vs Walker2d-v4",
+    "label": "main_sequence_proxy",
+    "sym_kl_gaussian": 67924.4425842242,
+    "obs_a": 893,
+    "obs_b": 820,
+    "dim": 17
+  },
+  {
+    "pair": "Walker2d-v4 vs HalfCheetah-v4",
+    "label": "supp_sequence_proxy",
+    "sym_kl_gaussian": 502.3714340629424,
+    "obs_a": 820,
+    "obs_b": 12000,
+    "dim": 17
+  },
+  {
+    "pair": "Hopper-v4 vs HalfCheetah-v4",
+    "label": "cross_pair_proxy",
+    "sym_kl_gaussian": 61219.79364041291,
+    "obs_a": 893,
+    "obs_b": 12000,
+    "dim": 17
+  }
+]

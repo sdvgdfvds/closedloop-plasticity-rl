@@ -1,0 +1,11 @@
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment Walker2d-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+[run] env=Walker2d-v4, algo=P3O-ClosedLoopFull, seed=5
+[start] 2026-03-24T15:13:32.949962
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_p3o_extra_innovations.py --only-algo P3O-ClosedLoopFull --env Walker2d-v4 --seed 5 --steps 500000 --runs-dir C:\Users\33277\pythonProject11111111\workspace_runs
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+[end] 2026-03-24T15:18:48.951264
+[returncode] 0
+[duration_sec] 316.01

@@ -1,0 +1,9 @@
+Sequence,Algorithm,Phase3 Return,Forgetting
+Hopper¡úWalker2d¡úHopper,PPO,122.4¡À91.0,114.1¡À125.8
+Hopper¡úWalker2d¡úHopper,PPO+NaP,87.6¡À46.6,162.6¡À244.2
+Hopper¡úWalker2d¡úHopper,EGR,95.5¡À51.2,230.4¡À262.3
+Hopper¡úWalker2d¡úHopper,EGR+Memory,359.5¡À300.5,29.4¡À34.9
+Walker2d¡úHalfCheetah¡úWalker2d,PPO,213.7¡À119.4,68.4¡À92.8
+Walker2d¡úHalfCheetah¡úWalker2d,PPO+NaP,180.7¡À96.5,85.8¡À137.2
+Walker2d¡úHalfCheetah¡úWalker2d,EGR,137.2¡À116.4,169.0¡À197.0
+Walker2d¡úHalfCheetah¡úWalker2d,EGR+Memory,236.5¡À132.2,94.4¡À165.6

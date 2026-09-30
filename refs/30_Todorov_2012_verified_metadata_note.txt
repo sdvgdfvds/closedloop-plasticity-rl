@@ -1,0 +1,15 @@
+Todorov et al. (2012) verification note
+
+Reference in manuscript:
+Todorov, E., Erez, T., & Tassa, Y. (2012). MuJoCo: A physics engine for model-based control.
+In 2012 IEEE/RSJ International Conference on Intelligent Robots and Systems (pp. 5026-5033).
+
+Verification result:
+- The bibliographic metadata has been verified against publicly accessible web sources and the existing local source note.
+- The current local file named '30_Todorov_2012_MuJoCo_a_physics_engine_for_model_based_control.pdf' is not a valid PDF; it is actually an HTML page saved with a .pdf suffix.
+- The local HTML file also does not contain the paper full text.
+- Therefore, the citation metadata is verified, but a clean local full-text PDF is still missing.
+
+Recommended action:
+- Keep the citation as verified metadata.
+- If needed later, download the official PDF manually through IEEE Xplore or another legitimate source with browser access.

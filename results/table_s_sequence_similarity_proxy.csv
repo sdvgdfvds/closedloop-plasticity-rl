@@ -1,0 +1,4 @@
+pair,label,sym_kl_gaussian,obs_a,obs_b,dim
+Hopper-v4 vs Walker2d-v4,main_sequence_proxy,67924.442584,893,820,17
+Walker2d-v4 vs HalfCheetah-v4,supp_sequence_proxy,502.371434,820,12000,17
+Hopper-v4 vs HalfCheetah-v4,cross_pair_proxy,61219.793640,893,12000,17

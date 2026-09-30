@@ -1,0 +1,10 @@
+{
+  "variant": "PPO-WeightDecay",
+  "env": "Hopper-v4",
+  "seed": 4,
+  "cfg": {
+    "use_layernorm": false,
+    "use_regen_reg": false,
+    "weight_decay": 0.001
+  }
+}

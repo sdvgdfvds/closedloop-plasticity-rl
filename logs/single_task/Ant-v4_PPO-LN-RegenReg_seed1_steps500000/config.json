@@ -1,0 +1,10 @@
+{
+  "variant": "PPO-LN-RegenReg",
+  "env": "Ant-v4",
+  "seed": 1,
+  "cfg": {
+    "use_layernorm": true,
+    "use_regen_reg": true,
+    "weight_decay": 0.0
+  }
+}

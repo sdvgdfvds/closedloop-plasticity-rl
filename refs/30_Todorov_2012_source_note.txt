@@ -1,0 +1,11 @@
+﻿Todorov et al. (2012)
+MuJoCo: A physics engine for model-based control
+
+Primary source URL:
+https://homes.cs.washington.edu/~todorov/papers/TodorovIROS12.pdf
+
+Local saved fallback:
+30_Todorov_2012_MuJoCo_a_physics_engine_for_model_based_control.html
+
+Note:
+The direct PDF endpoint returned an HTML page from this network environment, so the source page was preserved locally.

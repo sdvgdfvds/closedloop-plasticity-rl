@@ -1,0 +1,9 @@
+name,category,log_path,command
+main_quick_P3O-dynamic,main,campaign_logs\all_quick_20260323_223315\main_quick_P3O-dynamic.log,D:\BaiduNetdiskDownload\python.exe run_p3o_extra_innovations.py --only-algo P3O-dynamic --quick
+main_quick_P3O-dyn+AdaReset,main,campaign_logs\all_quick_20260323_223315\main_quick_P3O-dyn_AdaReset.log,D:\BaiduNetdiskDownload\python.exe run_p3o_extra_innovations.py --only-algo P3O-dyn+AdaReset --quick
+main_quick_P3O-dyn+HardDistill,main,campaign_logs\all_quick_20260323_223315\main_quick_P3O-dyn_HardDistill.log,D:\BaiduNetdiskDownload\python.exe run_p3o_extra_innovations.py --only-algo P3O-dyn+HardDistill --quick
+main_quick_P3O-dyn+AdaReset+HardDistill,main,campaign_logs\all_quick_20260323_223315\main_quick_P3O-dyn_AdaReset_HardDistill.log,D:\BaiduNetdiskDownload\python.exe run_p3o_extra_innovations.py --only-algo P3O-dyn+AdaReset+HardDistill --quick
+main_quick_P3O-dyn+EvtSBP+AdaReset+HardDistill,main,campaign_logs\all_quick_20260323_223315\main_quick_P3O-dyn_EvtSBP_AdaReset_HardDistill.log,D:\BaiduNetdiskDownload\python.exe run_p3o_extra_innovations.py --only-algo P3O-dyn+EvtSBP+AdaReset+HardDistill --quick
+main_quick_P3O-ClosedLoopAlpha,main,campaign_logs\all_quick_20260323_223315\main_quick_P3O-ClosedLoopAlpha.log,D:\BaiduNetdiskDownload\python.exe run_p3o_extra_innovations.py --only-algo P3O-ClosedLoopAlpha --quick
+main_quick_P3O-ClosedLoopFull,main,campaign_logs\all_quick_20260323_223315\main_quick_P3O-ClosedLoopFull.log,D:\BaiduNetdiskDownload\python.exe run_p3o_extra_innovations.py --only-algo P3O-ClosedLoopFull --quick
+sequence_quick_seed0,sequence,campaign_logs\all_quick_20260323_223315\sequence_quick_seed0.log,D:\BaiduNetdiskDownload\python.exe run_sequence_plasticity.py --seed 0 --quick

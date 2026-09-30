@@ -37,3 +37,18 @@ Code accompanying the paper on closed-loop memory-enhanced adaptive plasticity c
 ## Repository link for the paper
 
 `https://github.com/sdvgdfvds/closedloop-plasticity-rl`
+
+## Layout
+
+```
+code/                         extra training / plotting scripts
+logs/main_sequence/           Hopper → Walker2d → Hopper sequence logs
+logs/supp_sequence/           Walker2d → HalfCheetah → Walker2d sequence logs
+logs/single_task/             single-task runs (including Ant-v4 and extra seeds)
+logs/single_task_ablation/    ablations and EGR variants
+results/                      paper figures and tables
+results/archive/              extra plots and draft assets
+refs/                         literature PDFs used for the paper
+```
+
+`results/archive/` is supporting material, not the camera-ready figure set.

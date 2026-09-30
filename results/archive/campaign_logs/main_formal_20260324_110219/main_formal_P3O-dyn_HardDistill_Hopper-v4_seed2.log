@@ -1,0 +1,13 @@
+[start] 2026-03-24T11:06:29.381314
+[task] main_formal_P3O-dyn+HardDistill_Hopper-v4_seed2
+[category] main
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_p3o_extra_innovations.py --only-algo P3O-dyn+HardDistill --env Hopper-v4 --seed 2 --steps 500000 --force
+--------------------------------------------------------------------------------
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment Hopper-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+[run] env=Hopper-v4, algo=P3O-dyn+HardDistill, seed=2
+
+--------------------------------------------------------------------------------
+[end] 2026-03-24T11:10:41.830385
+[returncode] 0
+[duration_sec] 252.45

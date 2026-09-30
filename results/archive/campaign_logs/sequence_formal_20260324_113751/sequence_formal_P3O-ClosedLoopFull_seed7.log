@@ -1,0 +1,19 @@
+[start] 2026-03-24T11:53:17.375351
+[task] sequence_formal_P3O-ClosedLoopFull_seed7
+[category] sequence
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_sequence_plasticity.py --algo P3O-ClosedLoopFull --seed 7
+--------------------------------------------------------------------------------
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment Hopper-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment Walker2d-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment Hopper-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment Walker2d-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+Saved sequence run to: C:\Users\33277\Desktop\p3o_runs\sequence_P3O-ClosedLoopFull_Hopper-v4_to_Walker2d-v4_to_Hopper-v4_seed7_steps80000
+
+--------------------------------------------------------------------------------
+[end] 2026-03-24T11:55:36.950653
+[returncode] 0
+[duration_sec] 139.58

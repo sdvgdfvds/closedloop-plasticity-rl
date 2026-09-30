@@ -1,0 +1,4 @@
+Environment,SharedSeeds,N,FixedMean,FixedStd,EventMean,EventStd,DeltaEventMinusFixed,SignFlipP
+Hopper-v4,0 1 2 3 4,5,201.516,220.843,140.207,50.189,-61.309,0.7500
+Walker2d-v4,0 1 2 3 4,5,165.346,67.347,116.254,37.416,-49.092,0.3750
+HalfCheetah-v4,0 1 2 3 4,5,-812.832,73.067,-822.045,77.353,-9.212,0.9375

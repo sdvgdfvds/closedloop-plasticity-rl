@@ -1,0 +1,13 @@
+[start] 2026-03-24T11:41:50.911517
+[task] main_formal_P3O-ClosedLoopAlpha_HalfCheetah-v4_seed3
+[category] main
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_p3o_extra_innovations.py --only-algo P3O-ClosedLoopAlpha --env HalfCheetah-v4 --seed 3 --steps 500000
+--------------------------------------------------------------------------------
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+[run] env=HalfCheetah-v4, algo=P3O-ClosedLoopAlpha, seed=3
+
+--------------------------------------------------------------------------------
+[end] 2026-03-24T11:46:04.319707
+[returncode] 0
+[duration_sec] 253.41

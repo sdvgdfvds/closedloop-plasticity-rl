@@ -1,0 +1,13 @@
+[start] 2026-03-24T10:51:18.829810
+[task] main_formal_P3O-ClosedLoopFull_Walker2d-v4_seed3
+[category] main
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_p3o_extra_innovations.py --only-algo P3O-ClosedLoopFull --env Walker2d-v4 --seed 3 --steps 500000 --force
+--------------------------------------------------------------------------------
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment Walker2d-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+[run] env=Walker2d-v4, algo=P3O-ClosedLoopFull, seed=3
+
+--------------------------------------------------------------------------------
+[end] 2026-03-24T10:55:35.717430
+[returncode] 0
+[duration_sec] 256.89

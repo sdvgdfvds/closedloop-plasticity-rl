@@ -1,0 +1,10 @@
+{
+  "variant": "PPO-WeightDecay",
+  "env": "Walker2d-v4",
+  "seed": 0,
+  "cfg": {
+    "use_layernorm": false,
+    "use_regen_reg": false,
+    "weight_decay": 0.001
+  }
+}

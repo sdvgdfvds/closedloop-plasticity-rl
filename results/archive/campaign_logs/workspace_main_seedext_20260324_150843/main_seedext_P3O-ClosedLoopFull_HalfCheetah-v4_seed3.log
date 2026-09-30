@@ -1,0 +1,9 @@
+[skip] C:\Users\33277\pythonProject11111111\workspace_runs\HalfCheetah-v4_P3O-ClosedLoopFull_seed3_steps500000
+[start] 2026-03-24T15:14:21.707714
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_p3o_extra_innovations.py --only-algo P3O-ClosedLoopFull --env HalfCheetah-v4 --seed 3 --steps 500000 --runs-dir C:\Users\33277\pythonProject11111111\workspace_runs
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+[end] 2026-03-24T15:14:24.040342
+[returncode] 0
+[duration_sec] 2.34

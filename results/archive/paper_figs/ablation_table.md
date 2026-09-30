@@ -1,0 +1,5 @@
+| Env | PPO (mean+/-std) | PPO+Cycle (mean+/-std) | P3O-static (mean+/-std) | P3O-dynamic (mean+/-std) |
+|---|---|---|---|---|
+| Hopper-v4 | 119.18 +/- 2.44 | N/A | 87.38 +/- 41.36 | 60.58 +/- 51.17 |
+| Walker2d-v4 | 31.44 +/- 43.23 | N/A | 128.19 +/- 51.86 | 185.69 +/- 84.12 |
+ 

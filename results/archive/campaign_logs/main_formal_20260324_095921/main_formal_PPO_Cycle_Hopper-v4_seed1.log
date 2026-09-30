@@ -1,0 +1,11 @@
+[start] 2026-03-24T10:01:30.374919
+[task] main_formal_PPO+Cycle_Hopper-v4_seed1
+[category] main
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_main_baseline_fill.py --algo PPO+Cycle --env Hopper-v4 --seed 1 --steps 500000
+--------------------------------------------------------------------------------
+[skip] exists: C:\Users\33277\Desktop\p3o_runs\Hopper-v4_PPO+Cycle_seed1_steps500000
+
+--------------------------------------------------------------------------------
+[end] 2026-03-24T10:01:32.468238
+[returncode] 0
+[duration_sec] 2.09

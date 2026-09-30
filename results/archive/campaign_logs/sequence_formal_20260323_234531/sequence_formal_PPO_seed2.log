@@ -1,0 +1,27 @@
+[start] 2026-03-23T23:45:31.662267
+[task] sequence_formal_PPO_seed2
+[category] sequence
+[command] C:\Users\33277\AppData\Local\Programs\Python\Python311\python.exe run_sequence_plasticity.py --algo PPO --seed 2 --force
+--------------------------------------------------------------------------------
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment Hopper-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+C:\Users\33277\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\envs\registration.py:512: DeprecationWarning: [33mWARN: The environment Walker2d-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+Traceback (most recent call last):
+  File "C:\Users\33277\pythonProject11111111\run_sequence_plasticity.py", line 984, in <module>
+    main()
+  File "C:\Users\33277\pythonProject11111111\run_sequence_plasticity.py", line 979, in main
+    run_dir = run_sequence(sequence, args.seed, hp, args.algo, cfg, quick=args.quick, force=args.force)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\33277\pythonProject11111111\run_sequence_plasticity.py", line 730, in run_sequence
+    logger = SequenceLogger(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\33277\pythonProject11111111\run_sequence_plasticity.py", line 140, in __init__
+    os.makedirs(run_dir, exist_ok=True)
+  File "<frozen os>", line 225, in makedirs
+PermissionError: [WinError 5] ¾Ü¾ø·ÃÎÊ¡£: 'C:\\Users\\33277\\Desktop\\p3o_runs\\sequence_PPO_Hopper-v4_to_Walker2d-v4_to_Hopper-v4_seed2_steps80000'
+
+--------------------------------------------------------------------------------
+[end] 2026-03-23T23:45:36.273073
+[returncode] 1
+[duration_sec] 4.61
